@@ -1,7 +1,7 @@
 package com.sunilbooks.selflearnjava.oop;
 
 /**
- * Fully encapsulate Account expert class.
+ * Fully encapsulated Account expert class.
  * 
  * @version 1.0
  * @since 16 Nov 2014
