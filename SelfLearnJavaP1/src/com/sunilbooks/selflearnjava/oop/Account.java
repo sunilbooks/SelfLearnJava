@@ -1,9 +1,29 @@
 package com.sunilbooks.selflearnjava.oop;
 
+/**
+ * Fully encapsulate Account expert class.
+ * 
+ * @version 1.0
+ * @since 16 Nov 2014
+ * @author Sunil Sahu
+ * @Copyright (c) Sunil Sahu
+ */
+
 public class Account {
 
+	/**
+	 * Account Number
+	 */
 	String number = null;
+
+	/**
+	 * Type of Account
+	 */
 	String type = null;
+
+	/**
+	 * Balance of account
+	 */
 	double balance = 0;
 
 	public String getNumber() {
