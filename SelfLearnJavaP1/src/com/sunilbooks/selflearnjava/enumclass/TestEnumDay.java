@@ -1,4 +1,5 @@
-package com.sunilbooks.selflearnjava.basic;
+package com.sunilbooks.selflearnjava.enumclass;
+
 
 public class TestEnumDay {
 

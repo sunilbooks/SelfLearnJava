@@ -1,5 +1,13 @@
-package com.sunilbooks.selflearnjava.basic;
+package com.sunilbooks.selflearnjava.enumclass;
 
+/**
+ * Enum class contains Human constants
+ * 
+ * @version 1.0
+ * @since 16 Nov 2014
+ * @author Sunil Sahu
+ * @Copyright (c) Sunil Sahu
+ */
 public enum Human {
 
 	KID(10), MAN(50), OLDMAN(70);
