@@ -1,5 +1,14 @@
 package com.sunilbooks.selflearnjava.enumclass;
 
+/**
+ * Test Day enum class
+ * 
+ * @version 1.0
+ * @since 16 Nov 2014
+ * @author Sunil Sahu
+ * @Copyright (c) Sunil Sahu
+ * 
+ */
 
 public class TestEnumDay {
 
@@ -18,13 +27,33 @@ public class TestEnumDay {
 			System.out.println("Fridays are better.");
 			break;
 
+		case SATURDAY:
+			System.out.println("Saturdays are Cool !!!!");
+			break;
+
+		case SUNDAY:
+			System.out.println("Let's Chill it is Sunday!!!!");
+			break;
 		}
 
-		//Get all days
+		// Print all days
 		Day[] days = fd.values();
 		for (Day d : days) {
 			System.out.println(d);
 		}
 
 	}
+
+	/**
+	 * Output 
+	 * 5 
+	 * Fridays are better. 
+	 * SUNDAY 
+	 * MONDAY 
+	 * TUESDAY 
+	 * WEDNESDAY 
+	 * THURSDAY
+	 * FRIDAY 
+	 * SATURDAY
+	 */
 }
