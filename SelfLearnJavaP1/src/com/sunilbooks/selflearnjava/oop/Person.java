@@ -2,6 +2,15 @@ package com.sunilbooks.selflearnjava.oop;
 
 import java.util.Date;
 
+/**
+ * Class contains Person related attribute and methods.
+ * 
+ * @version 1.0
+ * @since 16 Nov 2014
+ * @author Sunil Sahu
+ * @Copyright (c) Sunil Sahu
+ */
+
 public abstract class Person {
 
 	private String name = null;

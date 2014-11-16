@@ -1,5 +1,14 @@
 package com.sunilbooks.selflearnjava.oop;
 
+/**
+ * Class contains Shape related attribute and methods.
+ * 
+ * @version 1.0
+ * @since 16 Nov 2014
+ * @author Sunil Sahu
+ * @Copyright (c) Sunil Sahu
+ */
+
 public abstract class Shape {
 
 	protected String color = null;
@@ -31,6 +40,12 @@ public abstract class Shape {
 		this.borderWidth = borderWidth;
 	}
 
+	/**
+	 * Area is abstract since its definition is known by it's specialized child
+	 * class.
+	 * 
+	 * @return
+	 */
 	public abstract double area();
 
 }
