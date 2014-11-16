@@ -1,6 +1,5 @@
 package com.sunilbooks.selflearnjava.clone;
 
-
 /**
  * This program is the example of DEEP CLONING. Customer contains BankAccount.
  * When Customer is cloned BankAccoubt is also cloned. For deep cloning all
@@ -14,11 +13,21 @@ package com.sunilbooks.selflearnjava.clone;
 public class Customer implements Cloneable {
 
 	public String name = null;
+
+	/**
+	 * Customer's account, will be deep cloned
+	 */
 	public BankAccount account = null;
+
+	/**
+	 * Customer's Address. Shallow cloned
+	 */
+	public CustomerAddress address = null;
 
 	public Customer(String n) {
 		name = n;
 		account = new BankAccount(10);
+		address = new CustomerAddress();
 	}
 
 	/**
