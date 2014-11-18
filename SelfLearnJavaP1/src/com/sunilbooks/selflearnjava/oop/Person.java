@@ -17,6 +17,8 @@ public class Person {
 	private String address = null;
 	private Date dateOfBirth = null;
 
+	public static final int AVERAGE_AGE = 60;
+
 	public Person() {
 	}
 
