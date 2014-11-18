@@ -38,7 +38,12 @@ public class Counter {
 	}
 
 	/**
-	 * Output : No # 0 No # 1 No # 2 No # 3 No # 4
+	 * Output : 
+	 * No # 0 
+	 * No # 1 
+	 * No # 2 
+	 * No # 3 
+	 * No # 4
 	 */
 
 }
