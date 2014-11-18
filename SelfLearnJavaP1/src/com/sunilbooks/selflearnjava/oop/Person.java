@@ -11,7 +11,7 @@ import java.util.Date;
  * @Copyright (c) Sunil Sahu
  */
 
-public abstract class Person {
+public class Person {
 
 	private String name = null;
 	private String address = null;
@@ -35,24 +35,24 @@ public abstract class Person {
 		return name;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setName(String n) {
+		name = n;
 	}
 
 	public String getAddress() {
 		return address;
 	}
 
-	public void setAddress(String address) {
-		this.address = address;
+	public void setAddress(String a) {
+		address = a;
 	}
 
 	public Date getDateOfBirth() {
 		return dateOfBirth;
 	}
 
-	public void setDateOfBirth(Date dateOfBirth) {
-		this.dateOfBirth = dateOfBirth;
+	public void setDateOfBirth(Date d) {
+		dateOfBirth = d;
 	}
 
 }
