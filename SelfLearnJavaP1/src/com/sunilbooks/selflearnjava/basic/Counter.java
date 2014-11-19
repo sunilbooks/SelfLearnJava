@@ -2,8 +2,8 @@ package com.sunilbooks.selflearnjava.basic;
 
 /**
  * This is a classic example of static method and static variable. Static method
- * nextNumber() will use count static attribute and return next number in the
- * sequence increased by 1.
+ * nextNumber() will use count static variable and return next number from the
+ * sequence.
  * 
  * @version 1.0
  * @since 16 Nov 2014
@@ -13,21 +13,21 @@ package com.sunilbooks.selflearnjava.basic;
 public class Counter {
 
 	/**
-	 * Counter is static, will be allocated memory once in the life
+	 * count is static, and will be allocated memory once in the life
 	 */
 	public static int count = 0;
 
 	/**
-	 * Return next number
+	 * Increases static variable count value by one and returns the next number.
 	 * 
 	 * @return
 	 */
 	public static int nextNumber() {
-		return count++;
+		return ++count;
 	}
 
 	/**
-	 * Test the counter
+	 * Print 5 numbers from sequence
 	 * 
 	 * @param args
 	 */
@@ -39,11 +39,11 @@ public class Counter {
 
 	/**
 	 * Output : 
-	 * No # 0 
 	 * No # 1 
 	 * No # 2 
 	 * No # 3 
-	 * No # 4
+	 * No # 4 
+	 * No # 5
 	 */
 
 }
