@@ -3,7 +3,7 @@ package com.sunilbooks.selflearnjava.oop;
 import java.util.Date;
 
 /**
- * Class contains Person related attribute and methods.
+ * Person expert class containing related attributes and methods.
  * 
  * @version 1.0
  * @since 16 Nov 2014
@@ -19,42 +19,59 @@ public class Person {
 
 	public static final int AVERAGE_AGE = 60;
 
+	/**
+	 * Default constructor
+	 */
 	public Person() {
 	}
+
+	/**
+	 * Parameterized constructor
+	 * 
+	 * @param name
+	 * @param address
+	 */
 
 	public Person(String name, String address) {
 		this.name = name;
 		this.address = address;
 	}
 
-	public Person(String n, String a, Date d) {
-		name = n;
-		address = a;
-		dateOfBirth = d;
+	/**
+	 * Parameterized constructor
+	 * 
+	 * @param name
+	 * @param address
+	 * @param dateOfBirth
+	 */
+	public Person(String name, String address, Date d) {
+		this.name = name;
+		this.address = address;
+		this.dateOfBirth = d;
 	}
 
 	public String getName() {
 		return name;
 	}
 
-	public void setName(String n) {
-		name = n;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public String getAddress() {
 		return address;
 	}
 
-	public void setAddress(String a) {
-		address = a;
+	public void setAddress(String address) {
+		this.address = address;
 	}
 
 	public Date getDateOfBirth() {
 		return dateOfBirth;
 	}
 
-	public void setDateOfBirth(Date d) {
-		dateOfBirth = d;
+	public void setDateOfBirth(Date dateOfBirth) {
+		this.dateOfBirth = dateOfBirth;
 	}
 
 }
