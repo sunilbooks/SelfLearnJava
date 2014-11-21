@@ -1,4 +1,4 @@
-package com.sunilbooks.selflearnjava.basic;
+package com.sunilbooks.selflearnjava.system;
 
 /**
  * A Class read a line from Keyboard and print at Console.
