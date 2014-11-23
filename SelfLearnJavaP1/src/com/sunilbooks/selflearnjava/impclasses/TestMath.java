@@ -1,14 +1,13 @@
 package com.sunilbooks.selflearnjava.impclasses;
 
 /**
- * Java training example source code developed by sunRays Technologies, Indore
- * Copyright (c) 2008 sunRays Technologies
+ * Test the key methods of java.lang.Math class
  * 
- * @date 08/08/08
  * @version 1.0
- * @author sunRays Developer
- * 
- *         Test Math methods
+ * @since 16 Nov 2014
+ * @author Sunil Sahu
+ * @Copyright (c) Sunil Sahu
+ * @url www.sunilbooks.com
  */
 
 public class TestMath {

@@ -3,17 +3,16 @@ package com.sunilbooks.selflearnjava.impclasses;
 import java.util.Random;
 
 /**
- * Java training example source code developed by sunRays Technologies, Indore
- * Copyright (c) 2008 sunRays Technologies
+ * Get the Random numbers
  * 
- * @date 08/08/08
  * @version 1.0
- * @author sunRays Developer
- * 
- *         Test Math methods
+ * @since 16 Nov 2014
+ * @author Sunil Sahu
+ * @Copyright (c) Sunil Sahu
+ * @url www.sunilbooks.com
  */
 
-public class TestRandomNumbers {
+public class GetRandomNumbers {
 
 	public static void main(String[] args) {
 
@@ -24,6 +23,7 @@ public class TestRandomNumbers {
 
 		}
 
+		// get random number with help of Random class
 		Random r = new Random();
 		for (int i = 0; i < 10; i++) {
 			int randomInt = r.nextInt(100);
