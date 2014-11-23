@@ -17,13 +17,18 @@ public class GetRandomNumbers {
 	public static void main(String[] args) {
 
 		// Generate random integers between 0 to 100
+
+		System.out
+				.println("Random integer between 1 to 100 using Math.random()");
 		for (int i = 0; i < 10; i++) {
 			int randonNo = (int) (Math.random() * 100);
-			System.out.println(randonNo);
+			System.out.println((i + 1) + " :" + randonNo);
 
 		}
 
-		// get random number with help of Random class
+		System.out
+				.println("\nRandom integer  between 1 to 100 using Random class");
+
 		Random r = new Random();
 		for (int i = 0; i < 10; i++) {
 			int randomInt = r.nextInt(100);
@@ -31,6 +36,8 @@ public class GetRandomNumbers {
 		}
 
 		// generate random double numbers
+		System.out
+				.println("\nRandom double  between 1 to 100 using Random class");
 		for (int i = 0; i < 10; i++) {
 			double randomD = r.nextDouble();
 			System.out.println(randomD);
