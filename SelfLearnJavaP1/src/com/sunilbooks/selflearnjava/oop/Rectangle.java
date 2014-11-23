@@ -1,45 +1,50 @@
 package com.sunilbooks.selflearnjava.oop;
 
-/*
- * copyright (c) sunRays Technologies Indore
- * @author: sunRays Developer
- * @url : www.sunrays.co.in
- *
+/**
+ * Inherits Shape class and contains attributes of Rectangle .
+ * 
+ * @version 1.0
+ * @since 16 Nov 2014
+ * @author Sunil Sahu
+ * @Copyright (c) Sunil Sahu
+ * @url www.sunilbooks.com
  */
 
 public class Rectangle extends Shape {
-	
-	private int length;
-	private  int width;
+
 	/**
-	 * @return the length
+	 * Length of Rectangle
 	 */
+	private int length;
+
+	/**
+	 * Width of Rectangle
+	 */
+	private int width;
+
 	public int getLength() {
 		return length;
 	}
-	/**
-	 * @param length the length to set
-	 */
+
 	public void setLength(int length) {
 		this.length = length;
 	}
-	/**
-	 * @return the width
-	 */
+
 	public int getWidth() {
 
 		return width;
 	}
-	/**
-	 * @param width the width to set
-	 */
+
 	public void setWidth(int width) {
 		this.width = width;
 	}
-	
+
+	/**
+	 * Calculates area of Rectangle
+	 */
 	public double area() {
-		
-		return length* width;
+
+		return length * width;
 	}
 
 }

@@ -1,4 +1,13 @@
-package com.sunilbooks.selflearnjava.basic;
+package com.sunilbooks.selflearnjava.array;
+
+/**
+ * Test multi-dimension array basic operations
+ * 
+ * @version 1.0
+ * @since 16 Nov 2014
+ * @author Sunil Sahu
+ * @Copyright (c) Sunil Sahu
+ */
 
 public class TestMultdimensionArray {
 

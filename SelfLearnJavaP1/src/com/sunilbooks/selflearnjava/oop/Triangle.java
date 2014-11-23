@@ -1,44 +1,49 @@
 package com.sunilbooks.selflearnjava.oop;
 
-/*
- * copyright (c) sunRays Technologies Indore
- * @author: sunRays Developer
- * @url : www.sunrays.co.in
- *
+/**
+ * Inherits Shape class and contains attributes of Triangle.
+ * 
+ * @version 1.0
+ * @since 16 Nov 2014
+ * @author Sunil Sahu
+ * @Copyright (c) Sunil Sahu
+ * @url www.sunilbooks.com
  */
 
 public class Triangle extends Shape {
-	
-	private int base;
-	private int height;
+
 	/**
-	 * @return the base
+	 * Base of Triangle
 	 */
+	private int base;
+
+	/**
+	 * Height of Triangle
+	 */
+	private int height;
+
 	public int getBase() {
 		return base;
 	}
-	/**
-	 * @param base the base to set
-	 */
+
 	public void setBase(int base) {
 		this.base = base;
 	}
-	/**
-	 * @return the height
-	 */
+
 	public int getHeight() {
 		return height;
 	}
-	/**
-	 * @param height the height to set
-	 */
+
 	public void setHeight(int height) {
 		this.height = height;
 	}
-	
+
+	/**
+	 * Calculates area of Rectangle
+	 */
 	public double area() {
-		
-		return base * height/2;
+
+		return (base * height) * 1 / 2;
 	}
 
 }

@@ -1,15 +1,25 @@
 package com.sunilbooks.selflearnjava.oop;
 
-/*
- * copyright (c) sunRays Technologies Indore
- * @author: sunRays Developer
- * @url : www.sunrays.co.in
+/**
+ * Inherits Shape class and contains attributes of Circle.
  *
+ * @version 1.0
+ * @since 16 Nov 2014
+ * @author Sunil Sahu
+ * @Copyright (c) Sunil Sahu
+ * @url www.sunilbooks.com
  */
 
 public class Circle extends Shape {
 
-	private int radius; //instance variable 
+	/**
+	 * Instance variable contains radius of Circle
+	 */
+	private int radius;
+
+	/**
+	 * PI is the constant
+	 */
 	public static final double PI = 3.14; // static variable
 
 	public int getRadius() {
@@ -20,6 +30,9 @@ public class Circle extends Shape {
 		this.radius = radius;
 	}
 
+	/**
+	 * Calculates area of Circle
+	 */
 	public double area() {
 		double area = 0;
 		area = PI * radius * radius;

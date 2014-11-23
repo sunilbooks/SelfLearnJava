@@ -1,4 +1,13 @@
-package com.sunilbooks.selflearnjava.basic;
+package com.sunilbooks.selflearnjava.array;
+
+/**
+ * Test array basic operations
+ * 
+ * @version 1.0
+ * @since 16 Nov 2014
+ * @author Sunil Sahu
+ * @Copyright (c) Sunil Sahu
+ */
 
 public class TestArray {
 
@@ -32,15 +41,10 @@ public class TestArray {
 		// Class Name of Array
 		String name = table.getClass().getName();
 		System.out.println("Class name of Array " + name);
-		
+
 		// Print all elements of an array
 		for (int i = 0; i < size; i++) {
 			System.out.println(i + " = " + table[i]);
 		}
-
-		//Copy an array to another array
-		
-		
-		
 	}
 }
