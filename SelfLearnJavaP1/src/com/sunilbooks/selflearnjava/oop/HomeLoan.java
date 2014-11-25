@@ -1,6 +1,18 @@
 package com.sunilbooks.selflearnjava.oop;
 
+/**
+ * Calculates the interest rate of Home Loan and depicts runtime (Dynamic)
+ * polymorphism behaviour of Bank and its Child classes.
+ * 
+ * @version 1.0
+ * @since 16 Nov 2014
+ * @author Sunil Sahu
+ * @Copyright (c) Sunil Sahu
+ * @url www.sunilbooks.com
+ */
+
 public class HomeLoan {
+
 	public static void main(String[] args) {
 		Bank[] banks = new Bank[3];
 		banks[0] = new AxisBank();
@@ -12,8 +24,9 @@ public class HomeLoan {
 	public static void loanEnquiry(Bank[] banks) {
 		for (Bank b : banks) {
 			// different implementation of getName and
-			System.out.print(b.getName() + " = ");
-			System.out.println(b.interestRate());
+			String name = b.getName();
+			double rate = b.interestRate();
+			System.out.print(name + " = " + rate);
 		}
 	}
 }
