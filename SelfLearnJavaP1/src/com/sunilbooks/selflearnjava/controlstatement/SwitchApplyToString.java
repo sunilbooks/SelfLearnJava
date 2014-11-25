@@ -29,31 +29,31 @@ public class SwitchApplyToString {
 			System.out.println("3rd Month The Year");
 			break;
 		case "April":
-			System.out.println("3rd Month The Year");
+			System.out.println("4th Month The Year");
 			break;
 		case "May":
-			System.out.println("3rd Month The Year");
+			System.out.println("5th Month The Year");
 			break;
 		case "June":
-			System.out.println("3rd Month The Year");
+			System.out.println("6th Month The Year");
 			break;
 		case "July":
-			System.out.println("3rd Month The Year");
+			System.out.println("7th Month The Year");
 			break;
 		case "August":
-			System.out.println("3rd Month The Year");
+			System.out.println("8th Month The Year");
 			break;
 		case "September":
-			System.out.println("3rd Month The Year");
+			System.out.println("9th Month The Year");
 			break;
 		case "October":
-			System.out.println("3rd Month The Year");
+			System.out.println("10th Month The Year");
 			break;
 		case "November":
-			System.out.println("3rd Month The Year");
+			System.out.println("11th Month The Year");
 			break;
 		case "December":
-			System.out.println("3rd Month The Year");
+			System.out.println("12th Month The Year");
 			break;
 		}
 	}

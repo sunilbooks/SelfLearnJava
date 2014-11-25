@@ -1,7 +1,7 @@
 package com.sunilbooks.selflearnjava.controlstatement;
 
 /**
- * Labeled break statement to terminate an outer loop.
+ * break statement to terminate a for loop.
  * 
  * @version 1.0
  * @since 16 Nov 2014

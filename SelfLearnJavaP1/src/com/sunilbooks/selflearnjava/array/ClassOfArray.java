@@ -1,0 +1,21 @@
+package com.sunilbooks.selflearnjava.array;
+
+/**
+ * Prints the name of array class.
+ * 
+ * @version 1.0
+ * @since 16 Nov 2014
+ * @author Sunil Sahu
+ * @Copyright (c) Sunil Sahu
+ */
+
+public class ClassOfArray {
+
+	public static void main(String[] args) {
+
+		char[] myArray = { 'S', 'U', 'N', 'R', 'A', 'Y', 'S' };
+		String name = myArray.getClass().getName();
+		System.out.println("Name of char[] array is " + name);
+
+	}
+}

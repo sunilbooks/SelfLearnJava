@@ -36,7 +36,7 @@ public class TestPrimitiveType {
 		long socialSecurityNumber = 999_99_9999L;
 
 		System.out.println("Credit Card Number : " + creditCardNumber);
-		System.out.println("Social Security Number :" + creditCardNumber);
+		System.out.println("Social Security Number :" + socialSecurityNumber);
 
 		// Character and String Literals
 		char capitalC = 'C';

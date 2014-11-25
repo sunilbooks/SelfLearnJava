@@ -4,8 +4,13 @@ import java.util.Calendar;
 import java.util.Date;
 
 /**
+ * Test date arithmetic
+ * 
+ * @version 1.0
+ * @since 16 Nov 2014
  * @author Sunil Sahu
- * @copyright (c) All Rights Reserved
+ * @Copyright (c) Sunil Sahu
+ * @url www.sunilbooks.com
  */
 
 public class TestDateArithmetic {
