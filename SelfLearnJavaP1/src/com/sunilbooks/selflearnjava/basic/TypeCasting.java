@@ -26,7 +26,7 @@ public class TypeCasting {
 		i = (int) d; // Explicit conversion
 		System.out.println("double -> int = " + i);
 
-		// converting double to character
+		// converting char to double
 		d = c; // Implicit conversion
 		System.out.println("char --> double = " + d);
 
