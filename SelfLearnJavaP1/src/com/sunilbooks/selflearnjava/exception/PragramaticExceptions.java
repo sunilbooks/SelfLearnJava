@@ -19,9 +19,9 @@ public class PragramaticExceptions {
 	public static void main(String[] args) {
 
 		// Check if user is valid
-		boolean userNotFound = isValidUser();
+		boolean userFound = isValidUser();
 
-		if (!userNotFound) {
+		if (!userFound) {
 			// raise an exception
 			throw new RuntimeException("Invalid User");
 		}
