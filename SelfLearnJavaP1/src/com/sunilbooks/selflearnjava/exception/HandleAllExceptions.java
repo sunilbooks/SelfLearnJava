@@ -1,7 +1,7 @@
 package com.sunilbooks.selflearnjava.exception;
 
 /**
- * Exception class handles all exception class hierarchy exceptions.
+ * Exception class handles all exceptions in hierarchy.
  * 
  * @version 1.0
  * @since 16 Nov 2014
