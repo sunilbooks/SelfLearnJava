@@ -21,9 +21,12 @@ public class PragramaticExceptions {
 		// Check if user is valid
 		boolean userFound = isValidUser();
 
-		if (!userFound) {
-			// raise an exception
-			throw new RuntimeException("Invalid User");
+		if (userFound) {
+			System.out.println("Valid User");
+		} else {
+			// instantiate and raise an exception
+			RuntimeException e = new RuntimeException("Invalid User");
+			throw e;
 		}
 	}
 
