@@ -32,9 +32,9 @@ public class TestCollection {
 			System.out.println(ele);
 		}
 
+		// Convert collection to array
 		Object[] oArray = c.toArray();
 
-		// Convert to array
 		System.out.println("\nElements of Coneverted Array");
 
 		// Print all elements of array using foreach statement
