@@ -1,6 +1,5 @@
 package com.sunilbooks.selflearnjava.collection;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Enumeration;
 import java.util.Iterator;
