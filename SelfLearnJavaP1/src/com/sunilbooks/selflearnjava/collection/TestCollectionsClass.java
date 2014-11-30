@@ -68,6 +68,7 @@ public class TestCollectionsClass {
 		employeesList.add(new Employee(5, "Ranu", "Gupta"));
 		employeesList.add(new Employee(6, "Rahul", "Sahu"));
 
+		// Sort collection of employee objects using comparator
 		EmployeeByNameComparator empComp = new EmployeeByNameComparator();
 		Collections.sort(employeesList, empComp);
 		System.out.println("Sorted List By Conparator : " + employeesList);
