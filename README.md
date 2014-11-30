@@ -1,6 +1,6 @@
 SelfLearnJava
 =============
 
-Self Learn Java Book Examples
+This project contains example programs of SelfLearn Java book.
 
-This is Eclipse project that can be downloaded and imported in Eclipse Juno and above editor.
+This is a Eclipse project that can be downloaded and imported in Eclipse Juno and above editor.
