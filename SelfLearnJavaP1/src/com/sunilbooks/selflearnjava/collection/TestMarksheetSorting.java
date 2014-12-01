@@ -14,7 +14,7 @@ import java.util.Collections;
  * @url www.sunilbooks.com
  */
 
-public class TestComparableMarksheet {
+public class TestMarksheetSorting {
 
 	public static void main(String[] args) {
 
