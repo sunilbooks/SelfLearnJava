@@ -42,7 +42,7 @@ public class Marksheet implements Comparable<Marksheet> {
 	}
 
 	/**
-	 * Natural ordering is done Roll Number
+	 * Natural ordering is done by Roll Number field
 	 */
 	@Override
 	public int compareTo(Marksheet m) {
