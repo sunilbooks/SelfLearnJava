@@ -28,11 +28,16 @@ public class TestStack {
 		Object objTop = stack.peek();
 		System.out.println(objTop);
 
-		Object obj3 = stack.pop(); // the string "3" is at the top of the stack.
+		// Gets top object ("3"), and remove it from stack
+		Object obj3 = stack.pop();
 		System.out.println(obj3);
-		Object obj2 = stack.pop(); // the string "2" is at the top of the stack.
+
+		// Gets top object ("2"), and remove it from stack
+		Object obj2 = stack.pop();
 		System.out.println(obj2);
-		Object obj1 = stack.pop(); // the string "1" is at the top of the stack.
+
+		// Gets top object ("1"), and remove it from stack
+		Object obj1 = stack.pop();
 		System.out.println(obj1);
 	}
 }

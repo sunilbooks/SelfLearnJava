@@ -62,7 +62,7 @@ public class Marksheet implements Comparable<Marksheet> {
 /**
  * A comparator class to sort Marksheet elements by Name in ascending order
  */
-class MarksheetOrderByName implements Comparator<Marksheet> {
+class OrderByName implements Comparator<Marksheet> {
 	public int compare(Marksheet m1, Marksheet m2) {
 		return m1.name.compareTo(m2.name);
 	}
@@ -73,7 +73,7 @@ class MarksheetOrderByName implements Comparator<Marksheet> {
 /**
  * A comparator class to sort Marksheet elements by Name in descending order
  */
-class MarksheetOrderByNameDesc implements Comparator<Marksheet> {
+class OrderByNameDesc implements Comparator<Marksheet> {
 	public int compare(Marksheet m1, Marksheet m2) {
 		return m2.name.compareTo(m1.name);
 	}
@@ -82,7 +82,7 @@ class MarksheetOrderByNameDesc implements Comparator<Marksheet> {
 /**
  * A comparator class to sort Marksheet elements by Marks in descending order
  */
-class MarksheetOrderByMarksDesc implements Comparator<Marksheet> {
+class OrderByMarksDesc implements Comparator<Marksheet> {
 	public int compare(Marksheet m1, Marksheet m2) {
 		if (m1.marks > m2.marks) {
 			return -1;

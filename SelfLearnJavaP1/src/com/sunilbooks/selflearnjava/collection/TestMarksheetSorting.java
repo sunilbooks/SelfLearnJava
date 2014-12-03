@@ -45,7 +45,7 @@ public class TestMarksheetSorting {
 		}
 
 		// Sort elements by Name in ascending order using Comparator
-		MarksheetOrderByName cName = new MarksheetOrderByName();
+		OrderByName cName = new OrderByName();
 		Collections.sort(marksheets, cName);
 
 		System.out.println("\n**Sorted By Name Comparator**");
@@ -54,7 +54,7 @@ public class TestMarksheetSorting {
 		}
 
 		// Sort elements by Name in descending order using Comparator
-		MarksheetOrderByNameDesc cDecName = new MarksheetOrderByNameDesc();
+		OrderByNameDesc cDecName = new OrderByNameDesc();
 		Collections.sort(marksheets, cDecName);
 
 		System.out.println("\n**Sorted By desc Name Comparator**");
@@ -63,7 +63,7 @@ public class TestMarksheetSorting {
 		}
 
 		// Sort elements by Marks in descending order using Comparator
-		MarksheetOrderByMarksDesc cMarks = new MarksheetOrderByMarksDesc();
+		OrderByMarksDesc cMarks = new OrderByMarksDesc();
 		Collections.sort(marksheets, cMarks);
 
 		System.out.println("\n**Sorted By desc Marks Comparator**");
