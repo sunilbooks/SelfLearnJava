@@ -18,7 +18,7 @@ public class FirstHello {
 		String name = "SUNRAYS";
 		System.out.println("Hello " + name);
 
-		// Print “Hello SUNRAYS” five times.
+		// Print "Hello SUNRAYS" five times.
 		int i = 0;
 		while (i < 5) {
 			System.out.println(i + " Hello SUNRAYS");
