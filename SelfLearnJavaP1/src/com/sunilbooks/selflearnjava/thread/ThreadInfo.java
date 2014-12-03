@@ -30,15 +30,6 @@ public class ThreadInfo {
 			tg = tg.getParent();
 		}
 
-		HelloWithThread t1 = new HelloWithThread("Sachin");
-		t1.setPriority(1);
-
-		HelloWithThread t2 = new HelloWithThread("Sourabh");
-		t2.setPriority(1);
-
-		t1.start();
-		t2.start();
-
 		info("", tg);
 	}
 
