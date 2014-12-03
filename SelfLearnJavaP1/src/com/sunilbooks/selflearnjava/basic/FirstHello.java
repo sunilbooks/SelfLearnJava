@@ -1,5 +1,14 @@
 package com.sunilbooks.selflearnjava.basic;
 
+/**
+ * Converts Primitive data into Strings.
+ * 
+ * @version 1.0
+ * @since 16 Nov 2014
+ * @author Sunil Sahu
+ * @Copyright (c) Sunil Sahu
+ */
+ 
 public class FirstHello {
 	public static void main(String[] args) {
 
@@ -9,7 +18,7 @@ public class FirstHello {
 		String name = "SUNRAYS";
 		System.out.println("Hello " + name);
 
-		// Print ìHello SUNRAYSî five times.
+		// Print ‚ÄúHello SUNRAYS‚Äù five times.
 		int i = 0;
 		while (i < 5) {
 			System.out.println(i + " Hello SUNRAYS");
