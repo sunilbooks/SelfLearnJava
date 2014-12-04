@@ -7,6 +7,7 @@ package com.sunilbooks.selflearnjava.exception;
  * @since 16 Nov 2014
  * @author Sunil Sahu
  * @Copyright (c) Sunil Sahu
+ * @url www.sunilbooks.com
  */
 
 public class HandleAllExceptions {
@@ -22,8 +23,7 @@ public class HandleAllExceptions {
 			// Get 7th character of string
 			System.out.println(name.charAt(6));
 		} catch (Exception e) {
-			System.out
-					.println("Universal Exception Handler: " + e.getMessage());
+			System.out.println("Universal Exception Handler: " + e.getMessage());
 		}
 
 	}
