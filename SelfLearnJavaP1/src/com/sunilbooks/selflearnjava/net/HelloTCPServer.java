@@ -4,7 +4,15 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
-
+/*
+ * Send a message to client
+ * 
+ * @version 1.0
+ * @since 16 Nov 2014
+ * @author Sunil Sahu
+ * @Copyright (c) Sunil Sahu
+ * @url www.sunilbooks.com
+ */
 public class HelloTCPServer {
 	public static void main(String[] args) throws Exception {
 
@@ -12,13 +20,13 @@ public class HelloTCPServer {
 		ServerSocket server = new ServerSocket(1234);
 		// Wait for Client
 		Socket client = server.accept();
-		// Open Client’s Input Stream
+		// Open Clientâ€™s Input Stream
 		DataInputStream in = new DataInputStream(client.getInputStream());
-		// Open Client’s Output Stream
+		// Open Clientâ€™s Output Stream
 		DataOutputStream out = new DataOutputStream(client.getOutputStream());
 		// Read greeting sent by Client
 		String greeting = in.readLine();
-		// Open Client’s Input Stream
+		// Open Clientâ€™s Input Stream
 		System.out.println(greeting);
 
 		// Write greetings to Client
