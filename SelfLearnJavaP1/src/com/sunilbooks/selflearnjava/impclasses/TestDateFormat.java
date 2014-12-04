@@ -4,10 +4,14 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
+ * Test date format
+ * 
+ * @version 1.0
+ * @since 16 Nov 2014
  * @author Sunil Sahu
- * @copyright (c) All Rights Reserved
+ * @Copyright (c) Sunil Sahu
+ * @url www.sunilbooks.com
  */
-
 public class TestDateFormat {
 	public static void main(String[] args) throws Exception {
 
