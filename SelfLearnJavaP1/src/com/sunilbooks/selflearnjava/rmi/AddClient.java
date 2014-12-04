@@ -2,6 +2,15 @@ package com.sunilbooks.selflearnjava.rmi;
 
 import java.rmi.Naming;
 import java.rmi.RMISecurityManager;
+/**
+ * Add Client
+ * 
+ * @version 1.0
+ * @since 16 Nov 2014
+ * @author Sunil Sahu
+ * @Copyright (c) Sunil Sahu
+ * @url www.sunilbooks.com
+ */
 
 public class AddClient {
 	public static void main(String[] args) {

@@ -1,5 +1,13 @@
 package com.sunilbooks.selflearnjava.oop;
-
+/**
+ * Class TestShape
+ * 
+ * @version 1.0
+ * @since 16 Nov 2014
+ * @author Sunil Sahu
+ * @Copyright (c) Sunil Sahu
+ * @url www.sunilbooks.com
+ */
 public class TestShape {
 
 	public static void main(String[] args) {

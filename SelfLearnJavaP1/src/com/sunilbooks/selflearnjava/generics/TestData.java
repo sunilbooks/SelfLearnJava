@@ -4,12 +4,11 @@ package com.sunilbooks.selflearnjava.generics;
  * Test Generic class Data. It creates two Data objects one holds Integer and
  * second holds String value
  * 
- * @see Data
- * 
- * @author SUNRAYS Developer
- * @URL : www.sunrays.co.in
- * 
- *      Copyright (c) sunRays Technologies. All rights reserved.
+ * @version 1.0
+ * @since 16 Nov 2014
+ * @author Sunil Sahu
+ * @Copyright (c) Sunil Sahu
+ * @url www.sunilbooks.com
  */
 
 public class TestData {

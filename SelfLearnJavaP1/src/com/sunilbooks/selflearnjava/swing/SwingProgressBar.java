@@ -9,7 +9,15 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JProgressBar;
 import javax.swing.UIManager;
-
+/**
+ * 
+ * 
+ * @version 1.0
+ * @since 16 Nov 2014
+ * @author Sunil Sahu
+ * @Copyright (c) Sunil Sahu
+ * @url www.sunilbooks.com
+ */
 public class SwingProgressBar extends JFrame {
 
 	protected int min = 20;

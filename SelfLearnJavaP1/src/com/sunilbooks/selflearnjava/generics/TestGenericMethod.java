@@ -3,12 +3,13 @@ package com.sunilbooks.selflearnjava.generics;
 /**
  * Example of Generic Method
  * 
- * @author SUNRAYS Developer
- * @URL : www.sunrays.co.in
- * 
- * Copyright (c) sunRays Technologies. All rights reserved.
- *
+ * @version 1.0
+ * @since 16 Nov 2014
+ * @author Sunil Sahu
+ * @Copyright (c) Sunil Sahu
+ * @url www.sunilbooks.com
  */
+
 
 public class TestGenericMethod {
 

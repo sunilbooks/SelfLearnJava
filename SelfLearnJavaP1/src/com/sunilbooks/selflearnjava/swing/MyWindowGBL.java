@@ -2,11 +2,18 @@ package com.sunilbooks.selflearnjava.swing;
 
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-
+/**
+ * Program to create GridBagLayout
+ * 
+ * @version 1.0
+ * @since 16 Nov 2014
+ * @author Sunil Sahu
+ * @Copyright (c) Sunil Sahu
+ * @url www.sunilbooks.com
+ */
 public class MyWindowGBL {
 
 	public static void main(String[] args) {

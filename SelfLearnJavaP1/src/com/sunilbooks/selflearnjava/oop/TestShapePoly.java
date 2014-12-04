@@ -4,10 +4,11 @@ package com.sunilbooks.selflearnjava.oop;
  * This class test polymorphic behavior of Shape class. Polymorphic behavior is
  * achieved by area() method.
  * 
+ * @version 1.0
+ * @since 16 Nov 2014
  * @author Sunil Sahu
- * @URL : www.sunilbooks.com
- * 
- *      Copyright (c) Sunil Sahu. All rights reserved.
+ * @Copyright (c) Sunil Sahu
+ * @url www.sunilbooks.com
  */
 public class TestShapePoly {
 

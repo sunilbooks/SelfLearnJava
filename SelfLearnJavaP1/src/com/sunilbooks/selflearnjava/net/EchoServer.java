@@ -6,11 +6,13 @@ import java.net.*;
 /*
  * Echo Server talks to multiple Clients sequentially 
  * 
- * copyright (c) sunRays Technologies Indore
- * @author: sunRays Developer
- * @url : www.sunrays.co.in
- * 
+ * @version 1.0
+ * @since 16 Nov 2014
+ * @author Sunil Sahu
+ * @Copyright (c) Sunil Sahu
+ * @url www.sunilbooks.com
  */
+
 
 public class EchoServer {
 
