@@ -1,12 +1,5 @@
 package com.sunilbooks.selflearnjava.collection;
 
-/*
- * copyright (c) sunRays Technologies Indore
- * @author: sunRays Developer
- * @url : www.sunrays.co.in
- *
- */
-
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Iterator;
@@ -15,6 +8,15 @@ import java.util.Set;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
+/**
+ * Test the TreeMap class
+ * 
+ * @version 1.0
+ * @since 16 Nov 2014
+ * @author Sunil Sahu
+ * @Copyright (c) Sunil Sahu
+ * @url www.sunilbooks.com
+ */
 public class TestTreeMap {
 
 	public static void main(String[] args) {

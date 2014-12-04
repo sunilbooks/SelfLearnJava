@@ -1,10 +1,14 @@
 package com.sunilbooks.selflearnjava.impclasses;
 
 /**
+ * Program to Test String
+ *
+ * @version 1.0
+ * @since 16 Nov 2014
  * @author Sunil Sahu
- * @copyright (c) All Rights Reserved
+ * @Copyright (c) Sunil Sahu
+ * @url www.sunilbooks.com
  */
-
 public class TestString {
 
 	public static void main(String[] args) {

@@ -7,6 +7,7 @@ package com.sunilbooks.selflearnjava.exception;
  * @since 16 Nov 2014
  * @author Sunil Sahu
  * @Copyright (c) Sunil Sahu
+ * @url www.sunilbooks.com
  */
 
 public class MultiCatchHandling {
@@ -22,7 +23,7 @@ public class MultiCatchHandling {
 			System.out.println(name.charAt(6));
 		} catch (NullPointerException e) {
 			// Executed when name is null
-			System.out.println("Name can’t be null");
+			System.out.println("Name canâ€™t be null");
 		} catch (StringIndexOutOfBoundsException e) {
 			// Executed when string has less than 7 chars
 			System.out.println("String is small");

@@ -3,14 +3,12 @@ package com.sunilbooks.selflearnjava.generics;
 /**
  * A simple generic class that holds any Class of data, T is a type parameter
  * that will be replaced by a real type when an object of type Data is created.
- * 
- * @param <T>
- *            Type parameter name
- * 
- * @author SUNRAYS Developer
- * @URL : www.sunrays.co.in
- * 
- *      Copyright (c) sunRays Technologies. All rights reserved.
+ *
+ * @version 1.0
+ * @since 16 Nov 2014
+ * @author Sunil Sahu
+ * @Copyright (c) Sunil Sahu
+ * @url www.sunilbooks.com
  */
 
 public class Data<T> {
