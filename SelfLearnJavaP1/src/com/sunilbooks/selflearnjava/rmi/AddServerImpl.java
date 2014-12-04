@@ -4,6 +4,15 @@ import java.rmi.Naming;
 import java.rmi.RMISecurityManager;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
+/**
+ * Class Add Server Implementation extends UnicastRemoteObject implements Add Server Interface
+ * 
+ * @version 1.0
+ * @since 16 Nov 2014
+ * @author Sunil Sahu
+ * @Copyright (c) Sunil Sahu
+ * @url www.sunilbooks.com
+ */
 
 public class AddServerImpl extends UnicastRemoteObject implements AddServerInt {
 
