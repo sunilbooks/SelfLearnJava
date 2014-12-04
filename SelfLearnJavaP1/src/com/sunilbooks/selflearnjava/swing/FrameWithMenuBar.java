@@ -7,7 +7,7 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 /**
- * 
+ * Program to create frame with menu bar
  * 
  * @version 1.0
  * @since 16 Nov 2014
