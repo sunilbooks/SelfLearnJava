@@ -5,13 +5,13 @@ package com.sunilbooks.selflearnjava.generics;
  * one holds Account info and
  * second holds Marksheet info
  * 
- * @see DataPair
- *
- * @author SUNRAYS Developer
- * @URL : www.sunrays.co.in
- * 
- * Copyright (c) sunRays Technologies. All rights reserved.
+ * @version 1.0
+ * @since 16 Nov 2014
+ * @author Sunil Sahu
+ * @Copyright (c) Sunil Sahu
+ * @url www.sunilbooks.com
  */
+
 
 public class TestDataPair {
 
