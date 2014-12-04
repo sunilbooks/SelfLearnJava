@@ -57,6 +57,30 @@ public class Marksheet implements Comparable<Marksheet> {
 		return rollNo + "," + name + "," + marks;
 	}
 
+	/**
+	 * Two marksheets will be equal if their roll numbers are same. This method
+	 * will be used by collections to search an element in collection.
+	 */
+	@Override
+	public boolean equals(Object o) {
+		if (o == null)
+			return false;
+		if (!(o instanceof Marksheet))
+			return false;
+		Marksheet other = (Marksheet) o;
+		return this.rollNo.equals(other.rollNo);
+	}
+
+	/**
+	 * When two marksheets are equal then their hashcose should be same.
+	 * Hashcode will be used by hash collections when an object is inserted as
+	 * key
+	 */
+	@Override
+	public int hashCode() {
+		return rollNo.hashCode();
+	}
+
 }
 
 /**
