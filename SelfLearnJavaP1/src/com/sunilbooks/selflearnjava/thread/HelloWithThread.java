@@ -31,7 +31,7 @@ public class HelloWithThread extends Thread {
 	 */
 	public void run() {
 		for (int i = 0; i < 500; i++) {
-			System.out.println(i + "Hello " + name);
+			System.out.println(i + "#" + name);
 		}
 
 	}
@@ -50,7 +50,7 @@ public class HelloWithThread extends Thread {
 		t2.start();
 
 		for (int i = 0; i < 500; i++) {
-			System.out.println(i + " This is Main");
+			System.out.println(i + " I m Main");
 		}
 
 	}
