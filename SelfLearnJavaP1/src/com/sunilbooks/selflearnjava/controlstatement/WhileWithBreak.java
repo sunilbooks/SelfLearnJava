@@ -19,7 +19,7 @@ public class WhileWithBreak {
 		boolean flag = true;
 
 		while (flag) {
-			// Break the look of i is equal to 5
+			// Break the loop if i is equal to 5
 			if (i == 5) {
 				break;
 			}
