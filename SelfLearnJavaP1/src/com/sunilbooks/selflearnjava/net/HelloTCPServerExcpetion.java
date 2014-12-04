@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 /*
- * 
+ * This is a class for Exception in TCP Server
  * 
  * @version 1.0
  * @since 16 Nov 2014
