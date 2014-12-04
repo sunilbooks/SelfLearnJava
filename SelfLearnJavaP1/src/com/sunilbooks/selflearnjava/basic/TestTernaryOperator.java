@@ -1,5 +1,13 @@
 package com.sunilbooks.selflearnjava.basic;
-
+/**
+ * Example to Test Ternary Operator
+ * 
+ * @version 1.0
+ * @since 16 Nov 2014
+ * @author Sunil Sahu
+ * @Copyright (c) Sunil Sahu
+ * @url www.sunilbooks.com
+ */
 public class TestTernaryOperator {
 
 	public static void main(String[] args) {
