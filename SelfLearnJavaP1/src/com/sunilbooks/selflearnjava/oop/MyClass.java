@@ -1,6 +1,5 @@
 package com.sunilbooks.selflearnjava.oop;
 /**
- * Class MyClass with all access specifiers 
  * 
  * @version 1.0
  * @since 16 Nov 2014
