@@ -2,11 +2,18 @@ package com.sunilbooks.selflearnjava.swing;
 
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-
+/**
+ * 
+ * 
+ * @version 1.0
+ * @since 16 Nov 2014
+ * @author Sunil Sahu
+ * @Copyright (c) Sunil Sahu
+ * @url www.sunilbooks.com
+ */
 public class WindowHandler implements WindowListener {
 
 	public void windowOpened(WindowEvent e) {
