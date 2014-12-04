@@ -14,7 +14,7 @@ public class WhileLoop {
 
 	public static void main(String[] args) {
 
-		// Declare local variable i and initlize it
+		// Declare local variable i 
 		int i = 0;
 
 		// Execute while till i is less than 5
