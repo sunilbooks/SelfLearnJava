@@ -4,6 +4,16 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
+ 
+/*
+ * Send a message to Server
+ * 
+ * @version 1.0
+ * @since 16 Nov 2014
+ * @author Sunil Sahu
+ * @Copyright (c) Sunil Sahu
+ * @url www.sunilbooks.com
+ */
 
 public class HelloTCPClient {
 
@@ -11,9 +21,9 @@ public class HelloTCPClient {
 		// Create Socket object using constructor accepting Server's IP and Port
 		// number
 		Socket client = new Socket("localhost", 1234);
-		// Open Client’s Input Stream
+		// Open Clientâ€™s Input Stream
 		DataInputStream in = new DataInputStream(client.getInputStream());
-		// Open Client’s Output Stream
+		// Open Clientâ€™s Output Stream
 		DataOutputStream out = new DataOutputStream(client.getOutputStream());
 
 		// Write greetings to Server
