@@ -4,14 +4,15 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 /**
- * Define genetic method to copy an Array elements into the Collection. We can
+ * Define generic method to copy an Array elements into the Collection. We can
  * call this method with any kind of collection whose element type is a
  * supertype of the element type of the array.
- * 
- * @author SUNRAYS Developer
- * @URL : www.sunrays.co.in
- * 
- *      Copyright (c) sunRays Technologies. All rights reserved.
+ *
+ * @version 1.0
+ * @since 16 Nov 2014
+ * @author Sunil Sahu
+ * @Copyright (c) Sunil Sahu
+ * @url www.sunilbooks.com
  */
 public class GenericMethods {
 
@@ -40,7 +41,7 @@ public class GenericMethods {
 
 	/**
 	 * @param <T>
-	 *            T could be any Data Type like String, Number, Float
+	 *      T could be any Data Type like String, Number, Float
 	 * @param a
 	 * @param c
 	 */
