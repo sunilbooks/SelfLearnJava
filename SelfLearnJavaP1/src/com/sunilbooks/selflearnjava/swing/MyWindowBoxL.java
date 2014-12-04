@@ -8,7 +8,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 /**
- * 
+ * Program to create Box Layout
  * 
  * @version 1.0
  * @since 16 Nov 2014
