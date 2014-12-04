@@ -5,15 +5,11 @@ package com.sunilbooks.selflearnjava.generics;
  * Because it has two type parameters, two type arguments must be passed to
  * DataPair when an object is created.
  * 
- * @param <K>
- *            Key Class
- * @param <V>
- *            Value Class
- * 
- * @author SUNRAYS Developer
- * @URL : www.sunrays.co.in
- * 
- * Copyright (c) sunRays Technologies. All rights reserved.
+ * @version 1.0
+ * @since 16 Nov 2014
+ * @author Sunil Sahu
+ * @Copyright (c) Sunil Sahu
+ * @url www.sunilbooks.com
  */
 
 public class DataPair<K, V> {
