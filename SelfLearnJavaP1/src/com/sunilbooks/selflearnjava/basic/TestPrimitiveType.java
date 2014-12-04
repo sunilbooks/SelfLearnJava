@@ -1,6 +1,6 @@
 package com.sunilbooks.selflearnjava.basic;
 /**
- * Example to Test Primitive Type
+ * Example to Test Primitive Data Types
  * 
  * @version 1.0
  * @since 16 Nov 2014
