@@ -6,7 +6,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 /**
- * 
+ * Toggle Button in Swing
  * 
  * @version 1.0
  * @since 16 Nov 2014
