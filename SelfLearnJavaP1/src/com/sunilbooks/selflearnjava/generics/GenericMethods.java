@@ -33,10 +33,13 @@ public class GenericMethods {
 		Integer[] iArray = new Integer[100];
 		Collection<Integer> iCol = new ArrayList<Integer>();
 		copyArrayToCollection(iArray, iCol); // T inferred to be
+		//integer
 
 		Float[] fArray = new Float[100];
 		Collection<Float> fCol = new ArrayList<Float>();
 		copyArrayToCollection(fArray, fCol); // T inferred to be
+	        //Float
+		
 	}
 
 	/**

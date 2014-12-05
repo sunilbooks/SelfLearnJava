@@ -4,7 +4,7 @@ import java.io.*;
 import java.net.*;
 
 /*
- * 
+ * Implementation of Quote Client with UDP
  * 
  * @version 1.0
  * @since 16 Nov 2014

@@ -4,7 +4,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JSlider;
 /**
- * 
+ * Slider in Swing
  * 
  * @version 1.0
  * @since 16 Nov 2014

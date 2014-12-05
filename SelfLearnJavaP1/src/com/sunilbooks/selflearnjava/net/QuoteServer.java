@@ -5,7 +5,7 @@ import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
 /*
- * 
+ *  Implementation of Quote Server with UDP
  * 
  * @version 1.0
  * @since 16 Nov 2014

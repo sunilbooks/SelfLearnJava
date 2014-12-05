@@ -1,14 +1,13 @@
 package com.sunilbooks.selflearnjava.swing;
 
 import java.awt.BorderLayout;
-
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 /**
- * 
+ * Create List Using Swing
  * 
  * @version 1.0
  * @since 16 Nov 2014

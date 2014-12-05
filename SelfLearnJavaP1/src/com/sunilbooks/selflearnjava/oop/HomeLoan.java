@@ -23,7 +23,7 @@ public class HomeLoan {
 
 	public static void loanEnquiry(Bank[] banks) {
 		for (Bank b : banks) {
-			// different implementation of getName and
+			// different implementation of getName and interestRate
 			String name = b.getName();
 			double rate = b.interestRate();
 			System.out.print(name + " = " + rate);

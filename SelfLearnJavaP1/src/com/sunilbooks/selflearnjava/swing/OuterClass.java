@@ -7,7 +7,7 @@ import java.awt.event.MouseEvent;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 /**
- * 
+ * Inner and outer Classes 
  * 
  * @version 1.0
  * @since 16 Nov 2014
