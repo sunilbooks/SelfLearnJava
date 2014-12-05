@@ -1,7 +1,6 @@
 package com.sunilbooks.selflearnjava.swing;
 
 import java.awt.GridLayout;
-
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
@@ -11,7 +10,7 @@ import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 /**
- * 
+ * Text Field in Swing
  * 
  * @version 1.0
  * @since 16 Nov 2014
