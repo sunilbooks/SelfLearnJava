@@ -7,7 +7,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 /**
- * 
+ * Ataching a tool tip to label
  * 
  * @version 1.0
  * @since 16 Nov 2014
