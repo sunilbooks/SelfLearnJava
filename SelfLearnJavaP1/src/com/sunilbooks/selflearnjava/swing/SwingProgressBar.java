@@ -4,13 +4,12 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JProgressBar;
 import javax.swing.UIManager;
 /**
- * 
+ * Progress Bar in swing 
  * 
  * @version 1.0
  * @since 16 Nov 2014
