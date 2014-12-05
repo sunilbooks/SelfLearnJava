@@ -1,6 +1,6 @@
 package com.sunilbooks.selflearnjava.test;
 /**
- * 
+ * Parsing of Primitive Datatype
  * 
  * @version 1.0
  * @since 16 Nov 2014
