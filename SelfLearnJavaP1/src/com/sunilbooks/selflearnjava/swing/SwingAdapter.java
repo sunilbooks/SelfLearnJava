@@ -2,12 +2,11 @@ package com.sunilbooks.selflearnjava.swing;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 /**
- * 
+ * Mouse Listener Using Adapter
  * 
  * @version 1.0
  * @since 16 Nov 2014
