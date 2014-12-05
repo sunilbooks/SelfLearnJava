@@ -7,7 +7,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 /**
- * Create and tests the dialog window.
+ * Creates and tests the dialog window.
  * 
  * @version 1.0
  * @since 16 Nov 2014
