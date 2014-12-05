@@ -1,5 +1,6 @@
 package com.sunilbooks.selflearnjava.oop;
 /**
+ * Example of Using Access Specifiers
  * 
  * @version 1.0
  * @since 16 Nov 2014
