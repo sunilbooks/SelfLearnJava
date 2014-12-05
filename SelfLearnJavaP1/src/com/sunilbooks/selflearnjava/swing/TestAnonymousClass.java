@@ -5,7 +5,7 @@ import java.awt.event.MouseEvent;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 /**
- * 
+ * Anonymous Class
  * 
  * @version 1.0
  * @since 16 Nov 2014
