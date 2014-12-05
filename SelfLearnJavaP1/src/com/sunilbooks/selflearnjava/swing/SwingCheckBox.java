@@ -1,7 +1,6 @@
 package com.sunilbooks.selflearnjava.swing;
 
 import java.awt.FlowLayout;
-
 import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
