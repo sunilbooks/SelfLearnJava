@@ -12,7 +12,7 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 /**
- * 
+ * Text Area in Swing
  * 
  * @version 1.0
  * @since 16 Nov 2014
