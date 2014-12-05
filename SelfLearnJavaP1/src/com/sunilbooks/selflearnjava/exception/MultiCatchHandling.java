@@ -23,7 +23,7 @@ public class MultiCatchHandling {
 			System.out.println(name.charAt(6));
 		} catch (NullPointerException e) {
 			// Executed when name is null
-			System.out.println("Name can’t be null");
+			System.out.println("Name canot be null");
 		} catch (StringIndexOutOfBoundsException e) {
 			// Executed when string has less than 7 chars
 			System.out.println("String is small");

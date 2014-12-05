@@ -35,7 +35,7 @@ public class TestTreeMap {
 		System.out.println(val);
 
 		// Remove a value
-		// map.remove(4);
+		map.remove(4);
 
 		// //Collection Views
 

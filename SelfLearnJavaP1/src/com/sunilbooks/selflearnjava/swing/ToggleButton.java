@@ -5,8 +5,9 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+
 /**
- * Toggle Button in Swing
+ * Creates a button and apply Action listner that listen button click event.
  * 
  * @version 1.0
  * @since 16 Nov 2014
@@ -35,8 +36,15 @@ public class ToggleButton {
 	}
 }
 
+/**
+ * Listens button click even
+ * 
+ */
 class ButtonListener implements ActionListener {
 
+	/**
+	 * Change the button label on click
+	 */
 	public void actionPerformed(ActionEvent event) {
 
 		JButton b = (JButton) event.getSource();

@@ -5,8 +5,9 @@ import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+
 /**
- * Dialog Box in Swing
+ * Creates and tests the dialog window.
  * 
  * @version 1.0
  * @since 16 Nov 2014
@@ -15,6 +16,7 @@ import javax.swing.JPanel;
  * @url www.sunilbooks.com
  */
 public class TestDialog {
+
 	public static void main(String[] args) {
 
 		// Create window and set title to "My First Window"
@@ -43,7 +45,5 @@ public class TestDialog {
 		dialog.pack();
 		dialog.setVisible(true);
 		
-		
-
 	}
 }

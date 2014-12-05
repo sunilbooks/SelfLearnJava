@@ -1,7 +1,7 @@
 package com.sunilbooks.selflearnjava.thread;
 
 /**
- * Account class containing synchronized method an d block
+ * Account class containing synchronized method and synchronized block
  * 
  * @version 1.0
  * @since 16 Nov 2014
@@ -21,25 +21,30 @@ public class Account {
 	 * Deposits amount in account. It is synchronized, only one thread can
 	 * deposit amount at a time.
 	 * 
+	 * This uses method synchronization
+	 * 
 	 * @param msg
 	 * @param amt
 	 */
 	public synchronized void deposit(String msg, int amt) {
 		int bal = getBalance() + amt;
 		setBalance(bal);
-		System.out.println(msg + " Now Balance is " + bal);
+		System.out.println(msg + " new balance " + bal);
 	}
 
 	/**
-	 * Withdraws amount from account
+	 * Withdraws amount from account. It is synchronized, only one thread can
+	 * withdraw amount at a time.
+	 * 
+	 * This uses block synchronization
 	 * 
 	 * @param msg
 	 * @param amt
 	 */
-	public void withdraw(String msg, int amt) {
+	public synchronized void withdraw(String msg, int amt) {
 		int bal = 0;
-		synchronized (this) {
-			bal = getBalance() + amt;
+		synchronized (this) { // Block syncronization
+			bal = getBalance() - amt;
 			setBalance(bal);
 		}
 		System.out.println(msg + " Now Balance is " + bal);
@@ -51,12 +56,8 @@ public class Account {
 	 * @return
 	 */
 	public int getBalance() {
-
-		// Assuming that Database operation will take 0.2 Seconds
-		try {
-			Thread.sleep(200);
-		} catch (InterruptedException e) {
-		}
+		// Assuming that Database operation will take 200 milliseconds
+		databaseDelay();
 		return balance;
 	}
 
@@ -66,10 +67,17 @@ public class Account {
 	 * @param balance
 	 */
 	public void setBalance(int balance) {
+		// Assuming that Database operation will take 200 milliseconds
+		databaseDelay();
+		this.balance = balance;
+	}
 
-		// Assuming that Database operation will take 0.2 Seconds
+	/**
+	 * Assumed that Database operation will take 200 milliseconds
+	 */
+	public void databaseDelay() {
 		try {
-			Thread.sleep(200);// Simulate Database Operation
+			Thread.sleep(200);
 		} catch (InterruptedException e) {
 		}
 		this.balance = balance;

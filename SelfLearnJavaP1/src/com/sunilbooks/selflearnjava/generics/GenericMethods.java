@@ -42,7 +42,6 @@ public class GenericMethods {
 		
 	}
 	
-
 	/**
 	 * @param <T>
 	 *      T could be any Data Type like String, Number, Float

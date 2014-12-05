@@ -22,8 +22,8 @@ public class HelloRunnable implements Runnable {
 	 * 
 	 * @param name
 	 */
-	public HelloRunnable(String name) {
-		this.name = name;
+	public HelloRunnable(String n) {
+		this.name = n;
 	}
 
 	/**
@@ -31,7 +31,7 @@ public class HelloRunnable implements Runnable {
 	 */
 	public void run() {
 		for (int i = 0; i < 5000; i++) {
-			System.out.println(i + "Hello " + name);
+			System.out.println(i + "#" + name);
 		}
 
 	}
@@ -43,8 +43,8 @@ public class HelloRunnable implements Runnable {
 	 */
 	public static void main(String args[]) {
 
-		Thread t1 = new Thread(new HelloRunnable("Santa"));
-		Thread t2 = new Thread(new HelloRunnable("Banta"));
+		Thread t1 = new Thread(new HelloRunnable("Ram"));
+		Thread t2 = new Thread(new HelloRunnable("Shyam"));
 		t1.start();
 		t2.start();
 	}
