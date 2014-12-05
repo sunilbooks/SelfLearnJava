@@ -6,7 +6,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 /**
- * 
+ * Dialog Box in Swing
  * 
  * @version 1.0
  * @since 16 Nov 2014
