@@ -1,6 +1,6 @@
 package com.sunilbooks.selflearnjava.oop;
 /**
- * 
+ * Use of Other class in current Package
  * 
  * @version 1.0
  * @since 16 Nov 2014
