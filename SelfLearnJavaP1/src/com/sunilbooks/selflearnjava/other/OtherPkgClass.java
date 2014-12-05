@@ -2,7 +2,7 @@ package com.sunilbooks.selflearnjava.other;
 
 import com.sunilbooks.selflearnjava.oop.MyClass;
 /**
- * 
+ * OtherPkgCass extends MyClass
  * 
  * @version 1.0
  * @since 16 Nov 2014

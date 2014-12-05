@@ -1,13 +1,12 @@
 package com.sunilbooks.selflearnjava.swing;
 
 import java.awt.FlowLayout;
-
 import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 /**
- * 
+ * Create check box using swing
  * 
  * @version 1.0
  * @since 16 Nov 2014
