@@ -24,14 +24,14 @@ public class HelloTCPServerExcpetion {
 			// Wait for Client
 			Socket client;
 			client = server.accept();
-			// Open Clientâ€™s Input Stream
+			// Open Client’s Input Stream
 			DataInputStream in = new DataInputStream(client.getInputStream());
-			// Open Clientâ€™s Output Stream
+			// Open Client’s Output Stream
 			DataOutputStream out = new DataOutputStream(
 					client.getOutputStream());
 			// Read greeting sent by Client
 			String greeting = in.readLine();
-			// Open Clientâ€™s Input Stream
+			// Open Client’s Input Stream
 			System.out.println(greeting);
 
 			// Write greetings to Client

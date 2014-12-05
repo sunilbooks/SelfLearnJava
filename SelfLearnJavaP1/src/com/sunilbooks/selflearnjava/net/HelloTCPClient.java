@@ -21,9 +21,9 @@ public class HelloTCPClient {
 		// Create Socket object using constructor accepting Server's IP and Port
 		// number
 		Socket client = new Socket("localhost", 1234);
-		// Open Clientâ€™s Input Stream
+		// Open Client’s Input Stream
 		DataInputStream in = new DataInputStream(client.getInputStream());
-		// Open Clientâ€™s Output Stream
+		// Open Client’s Output Stream
 		DataOutputStream out = new DataOutputStream(client.getOutputStream());
 
 		// Write greetings to Server
