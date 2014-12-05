@@ -1,13 +1,12 @@
 package com.sunilbooks.selflearnjava.swing;
 
 import java.awt.FlowLayout;
-
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 /**
- * 
+ * Create Combox using Swing
  * 
  * @version 1.0
  * @since 16 Nov 2014
