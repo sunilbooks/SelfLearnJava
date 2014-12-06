@@ -24,7 +24,8 @@ public class PlayerThread extends Thread {
 
 	public void run() {
 		for (int match = 1; match < 10; match++) {
-			String msg = getName() + " played match#" + match;
+			String msg = getName();
+			msg += " played match#" + match;
 			System.out.println(msg);
 		}
 	}
