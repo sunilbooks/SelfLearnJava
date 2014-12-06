@@ -7,7 +7,7 @@ import java.util.Collection;
  * Define generic method to copy an Array elements into the Collection. We can
  * call this method with any kind of collection whose element type is a
  * supertype of the element type of the array.
- *
+ * 
  * @version 1.0
  * @since 16 Nov 2014
  * @author Sunil Sahu
@@ -33,18 +33,15 @@ public class GenericMethods {
 		Integer[] iArray = new Integer[100];
 		Collection<Integer> iCol = new ArrayList<Integer>();
 		copyArrayToCollection(iArray, iCol); // T inferred to be
-		//integer
 
 		Float[] fArray = new Float[100];
 		Collection<Float> fCol = new ArrayList<Float>();
 		copyArrayToCollection(fArray, fCol); // T inferred to be
-	        //Float
-		
 	}
 
 	/**
 	 * @param <T>
-	 *      T could be any Data Type like String, Number, Float
+	 *            T could be any Data Type like String, Number, Float
 	 * @param a
 	 * @param c
 	 */

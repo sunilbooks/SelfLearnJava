@@ -20,10 +20,10 @@ public class DataPair<K, V> {
 	/**
 	 * Pass two objects to constructor
 	 * 
-	 * @param key :
-	 *            Key object
-	 * @param val :
-	 *            Value Object
+	 * @param key
+	 *            : Key object
+	 * @param val
+	 *            : Value Object
 	 */
 	public DataPair(K key, V val) {
 		this.key = key;
@@ -50,5 +50,33 @@ public class DataPair<K, V> {
 	void showType() {
 		System.out.println("Type of K is " + key.getClass().getName());
 		System.out.println("Type of V is " + value.getClass().getName());
+	}
+
+	public static void main(String[] args) {
+
+		// Keep Account Information
+
+		System.out.println("\nAccount Information");
+
+		DataPair<String, Double> account = null;
+		account = new DataPair<String, Double>("SBI-100", 20.5);
+
+		account.showType(); // Show the type of data used by iOb.
+		String accNum = account.getKey(); // type casting not required.
+		double accBal = account.getValue();
+		System.out.println(accNum + " : " + accBal);
+
+		// Keep Marksheet Information
+
+		System.out.println("\nMarksheet Information");
+
+		DataPair<String, Integer> marksheet = null;
+		marksheet = new DataPair<String, Integer>("RN_786", 98);
+
+		marksheet.showType(); // Show the type of data used by iOb.
+		String rollNo = marksheet.getKey();// type casting not required.
+		int marks = marksheet.getValue();// type casting not required.
+		System.out.println(rollNo + " : " + marks);
+
 	}
 }

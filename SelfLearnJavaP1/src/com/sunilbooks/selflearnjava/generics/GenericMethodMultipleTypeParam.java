@@ -1,7 +1,7 @@
 package com.sunilbooks.selflearnjava.generics;
 
 /**
- * Example of Generic Method
+ * Generic method example that Receives multiple type parameters.
  * 
  * @version 1.0
  * @since 16 Nov 2014
@@ -10,12 +10,11 @@ package com.sunilbooks.selflearnjava.generics;
  * @url www.sunilbooks.com
  */
 
-
-public class TestGenericMethod {
+public class GenericMethodMultipleTypeParam {
 
 	/**
-	 * A Generic methods that determine if an object is in an array. 
-	 * Upper bound of V is T
+	 * A Generic methods that determine if an object is in an array. Upper bound
+	 * of V is T
 	 */
 	static <T, V extends T> boolean contains(T x, V[] y) {
 		for (int i = 0; i < y.length; i++)
@@ -29,6 +28,7 @@ public class TestGenericMethod {
 		Integer nums[] = { 1, 2, 3, 4, 5 };
 		if (contains(2, nums))
 			System.out.println("2 is in nums");
+		
 		if (!contains(7, nums))
 			System.out.println("7 is not in nums");
 		System.out.println();
