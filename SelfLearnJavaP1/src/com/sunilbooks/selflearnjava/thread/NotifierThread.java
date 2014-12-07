@@ -3,8 +3,8 @@ package com.sunilbooks.selflearnjava.thread;
 import java.util.Date;
 
 /**
- * Notifier notifies to thread(s), waiting to acquire lock (monitor) on Message
- * object
+ * Notifier notifies to thread(s), waiting for acquiring lock (monitor) on
+ * Message object
  * 
  * @version 1.0
  * @since 16 Nov 2014

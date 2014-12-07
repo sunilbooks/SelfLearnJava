@@ -1,7 +1,8 @@
 package com.sunilbooks.selflearnjava.thread;
 
 /**
- * Joins the next thread and wait until next thread is finished
+ * Example of join() method. In this example a thread joins the next thread and
+ * wait until next thread is finished
  * 
  * @version 1.0
  * @since 16 Nov 2014

@@ -3,8 +3,8 @@ package com.sunilbooks.selflearnjava.thread;
 import java.util.Date;
 
 /**
- * Waiter thread releases the lock from the Message object by calling wait()
- * method.
+ * WaiterThread object releases the lock from the Message object by calling
+ * wait() method and wait until notified by NotifierThread.
  * 
  * @version 1.0
  * @since 16 Nov 2014
