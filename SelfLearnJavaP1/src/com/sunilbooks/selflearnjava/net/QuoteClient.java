@@ -4,7 +4,7 @@ import java.io.*;
 import java.net.*;
 
 /*
- * Implementation of Quote Client with UDP
+ * Created UDP client that send an empty packet to server and received today's quote.
  * 
  * @version 1.0
  * @since 16 Nov 2014
@@ -39,7 +39,7 @@ public class QuoteClient {
 		// Wait for a packet and receive
 		socket.receive(packet);
 
-		// Display response
+		// Convert byte into string
 		String received = new String(packet.getData());
 
 		System.out.println("Quote of the Moment: " + received);

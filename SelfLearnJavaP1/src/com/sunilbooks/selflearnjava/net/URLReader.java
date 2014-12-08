@@ -7,7 +7,7 @@ import java.net.URL;
 import java.util.Scanner;
 
 /*
- * It reads html text from a URL.
+ * Reads text from a URL and displays at console using java.net.URL class.
  * 
  * @version 1.0
  * @since 16 Nov 2014
@@ -18,40 +18,29 @@ import java.util.Scanner;
 
 public class URLReader {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 
-		URL u = null;
+		URL u = new URL("http://www.sunrays.co.in:80/Home");
 
-		try {
-			u = new URL("https://www.google.co.in/search");
+		System.out.println("Protocol: " + u.getProtocol());
+		System.out.println("Host Name: " + u.getHost());
+		System.out.println("Port Number: " + u.getPort());
+		System.out.println("File Name: " + u.getFile());
 
-			System.out.println("Protocol: " + u.getProtocol());
-			System.out.println("Host Name: " + u.getHost());
-			System.out.println("Port Number: " + u.getPort());
-			System.out.println("File Name: " + u.getFile());
-			
+		// Open input channel to read data
+		InputStream iStr = u.openStream();
 
-			// Open input channel to read data
-			InputStream iStr = u.openStream();
+		// Scanner will convert bytes into text
+		Scanner in = new Scanner(iStr);
 
-			// Scanner will convert bytes into text
-			Scanner in = new Scanner(iStr);
+		System.out.print("URL contents ***");
 
-			System.out.print("URL contents ***");
-
-			// Read text line by line from URL
-			while (in.hasNext()) {
-				String html = in.nextLine();
-				System.out.println(html);
-			}
-
-			in.close();
-
-		} catch (MalformedURLException e) {
-			System.out.println("Invalid URL");
-		} catch (IOException e) {
-			System.out.println("Input Output Error");
+		// Read text line by line from URL
+		while (in.hasNext()) {
+			String html = in.nextLine();
+			System.out.println(html);
 		}
-	}
 
+		in.close();
+	}
 }

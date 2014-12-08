@@ -18,7 +18,7 @@ public class EchoServer {
 
 	public static void main(String[] a) throws IOException {
 
-		// Start Server on port number 4444
+		// Start Server @ port# 4444
 		ServerSocket sSocket = new ServerSocket(4444);
 
 		System.out.println("Echo Server is Started");

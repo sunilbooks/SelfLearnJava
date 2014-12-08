@@ -6,7 +6,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
  
 /*
- * Send a message to Server
+ * Creates a TCP client. Sends a greeting string to server and receives back greeting string from the server.
  * 
  * @version 1.0
  * @since 16 Nov 2014
@@ -18,9 +18,11 @@ import java.net.Socket;
 public class HelloTCPClient {
 
 	public static void main(String[] args) throws Exception {
-		// Create Socket object using constructor accepting Server's IP and Port
-		// number
+
+		// Connect to server IP (localhost) and port (1234) using parameterized
+		// constructor.
 		Socket client = new Socket("localhost", 1234);
+
 		// Open Client’s Input Stream
 		DataInputStream in = new DataInputStream(client.getInputStream());
 		// Open Client’s Output Stream
@@ -31,7 +33,6 @@ public class HelloTCPClient {
 
 		// Read greeting sent by Server
 		String greeting = in.readLine();
-
 		System.out.println(greeting);
 
 		// Close connection with server

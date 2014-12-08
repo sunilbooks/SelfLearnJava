@@ -4,8 +4,9 @@ import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
+
 /*
- *  Implementation of Quote Server with UDP
+ *  Creates a UDP server that sends random quote to the client on arrival of a packet from client.
  * 
  * @version 1.0
  * @since 16 Nov 2014
@@ -20,7 +21,7 @@ public class QuoteServer {
 
 		String[] quotes = { "Bura Mat Dekho", "Bura Mat kaho", "Bura Mat suno" };
 
-		// Start UDP Socket on port number 4445
+		// Start UDP Socket @ port#4445
 		DatagramSocket socket = new DatagramSocket(4445);
 
 		// Create a byte buffer

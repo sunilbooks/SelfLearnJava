@@ -5,7 +5,7 @@ import java.util.Scanner;
 import java.io.*;
 
 /*
- * Writes parameter to a URL and read url contents 
+ * Sends a search parameter to www.ask.com and read the search results.
  * 
  * @version 1.0
  * @since 16 Nov 2014

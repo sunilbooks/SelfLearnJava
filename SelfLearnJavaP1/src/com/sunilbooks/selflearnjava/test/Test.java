@@ -16,7 +16,6 @@ public class Test {
 		double d = Double.parseDouble("5.5");
 		boolean b = Boolean.parseBoolean("true");
 		float f = Float.parseFloat("5.2");
-
 	}
 
 }
