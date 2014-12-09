@@ -4,8 +4,10 @@ import java.rmi.Naming;
 import java.rmi.RMISecurityManager;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
+
 /**
- * Class Add Server Implementation extends UnicastRemoteObject implements Add Server Interface
+ * It is the RMI Server that implements remote interface and extends
+ * UnicastRemoteObject.
  * 
  * @version 1.0
  * @since 16 Nov 2014
@@ -16,20 +18,35 @@ import java.rmi.server.UnicastRemoteObject;
 
 public class AddServerImpl extends UnicastRemoteObject implements AddServerInt {
 
+	/**
+	 * Default constructor
+	 * 
+	 * @throws RemoteException
+	 */
 	AddServerImpl() throws RemoteException {
 		super();
 	}
 
-	// remote Method
+	/**
+	 * Remote Method
+	 */
 	public int sum(int a, int b) throws RemoteException {
 		return a + b;
 	}
 
-	// Local Method
+	/**
+	 * Local method
+	 */
 	public void display() {
 		System.out.println("Display is working");
 	}
 
+	/**
+	 * Instantiate RMI Server and bind with RMI Registry.
+	 * 
+	 * @param args
+	 * @throws Exception
+	 */
 	public static void main(String args[]) throws Exception {
 		// Install security manager
 		System.setSecurityManager(new RMISecurityManager());
@@ -40,7 +57,7 @@ public class AddServerImpl extends UnicastRemoteObject implements AddServerInt {
 		// Bind server instance with RMI Registry
 		Naming.rebind("ADD-SERVER", Server);
 
-		System.out.println("Server is waiting.....");
+		System.out.println("Server started!");
 	}
 
 }
