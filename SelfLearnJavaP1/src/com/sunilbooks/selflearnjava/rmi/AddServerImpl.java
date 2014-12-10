@@ -52,10 +52,10 @@ public class AddServerImpl extends UnicastRemoteObject implements AddServerInt {
 		System.setSecurityManager(new RMISecurityManager());
 
 		// create a local instance of the server //object
-		AddServerImpl Server = new AddServerImpl();
+		AddServerImpl server = new AddServerImpl();
 
 		// Bind server instance with RMI Registry
-		Naming.rebind("ADD-SERVER", Server);
+		Naming.rebind("ADD-SERVER", server);
 
 		System.out.println("Server started!");
 	}
