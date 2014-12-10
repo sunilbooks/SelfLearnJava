@@ -51,11 +51,11 @@ public class GetClassInfo {
 		System.out.println();
 
 		// get class constructors
-		Constructor[] constructors = c.getConstructors();
+		Constructor[] ctrs = c.getConstructors();
 		System.out.println("Constructor information");
 
 		// Iterate all constructors
-		for (Constructor ctr : constructors) {
+		for (Constructor ctr : ctrs) {
 			System.out.println("\tName:" + ctr.getName());
 			Class[] params = ctr.getParameterTypes();
 			if (params.length > 0) {
