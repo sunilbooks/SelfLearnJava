@@ -28,11 +28,14 @@ public class InvokeMethod {
 
 		// get method with specific name and parameters
 		Method oneMethod = c.getMethod("setName", String.class);
+		// Set Name
 		oneMethod.invoke(person, "Abhay");
 
+		// Set Address
 		oneMethod = c.getMethod("setAddress", String.class);
 		oneMethod.invoke(person, "Sadar Bazar");
 
+		// Set Date of Birth
 		oneMethod = c.getMethod("setDateOfBirth", Date.class);
 		oneMethod.invoke(person, new Date());
 
