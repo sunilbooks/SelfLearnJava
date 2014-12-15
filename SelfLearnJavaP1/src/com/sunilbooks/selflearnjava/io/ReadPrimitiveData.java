@@ -13,7 +13,7 @@ import java.io.FileInputStream;
  * @url www.sunilbooks.com
  */
 
-public class FilePrimitiveDataRead {
+public class ReadPrimitiveData {
 
 	public static void main(String[] args) throws Exception {
 

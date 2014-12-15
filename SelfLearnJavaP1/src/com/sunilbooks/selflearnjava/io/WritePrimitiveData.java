@@ -13,7 +13,7 @@ import java.io.FileOutputStream;
  * @url www.sunilbooks.com
  */
 
-public class FilePrimitiveDataWrite {
+public class WritePrimitiveData {
 
 	public static void main(String[] args) throws Exception {
 
