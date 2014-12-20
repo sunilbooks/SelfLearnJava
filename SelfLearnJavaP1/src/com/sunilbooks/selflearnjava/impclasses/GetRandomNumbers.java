@@ -20,8 +20,8 @@ public class GetRandomNumbers {
 
 		System.out.println("Random integer between 1 to 100 using Math.random()");
 		for (int i = 0; i < 10; i++) {
-			int randonNo = (int) (Math.random() * 100);
-			System.out.println((i + 1) + " :" + randonNo);
+			int randomNo = (int) (Math.random() * 100);
+			System.out.println((i + 1) + " :" + randomNo);
 
 		}
 

@@ -37,7 +37,7 @@ public class TestString {
 		String n = "Vijay Dinanth Chouhan";
 
 		System.out.println("String Length: " + n.length());
-		System.out.println("7th charcter: " + n.charAt(6));
+		System.out.println("7th character: " + n.charAt(6));
 		System.out.println("Index Of Dina: " + n.indexOf("Dina"));
 		System.out.println("First position of i: " + n.indexOf("i"));
 		System.out.println("Last position of i: " + n.lastIndexOf("i"));
