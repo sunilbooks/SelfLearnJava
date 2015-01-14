@@ -28,7 +28,7 @@ public class QuoteServer {
 		byte[] buf = new byte[256];
 
 		// Create an empty data packet to receive sender's packet
-		DatagramPacket packet = new DatagramPacket(buf, buf.length);
+		DatagramPacket emptyPkt = new DatagramPacket(buf, buf.length);
 
 		boolean flag = true;
 
@@ -36,13 +36,13 @@ public class QuoteServer {
 		while (flag) {
 
 			// Wait for a packet and receive
-			socket.receive(packet);
+			socket.receive(emptyPkt);
 
 			// Get Sender's IP Address
-			InetAddress address = packet.getAddress();
+			InetAddress address = emptyPkt.getAddress();
 
 			// Get Sender's Port Number
-			int port = packet.getPort();
+			int port = emptyPkt.getPort();
 
 			// Get random index number between 0 to 2
 			int ind = (int) (Math.random() * 2);
