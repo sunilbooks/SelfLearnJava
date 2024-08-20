@@ -1,34 +1,41 @@
 package com.sunilbooks.selflearnjava.array;
 
 /**
- * Copy array elements using java.lang.System
+ * The {@code CopyAnArray} class demonstrates how to copy elements from one array to another
+ * using the {@link System#arraycopy(Object, int, Object, int, int)} method.
+ * <p>
+ * In this example, a portion of a character array is copied into another array,
+ * and the result is printed to the console.
+ * </p>
  * 
+ * @author Sunil Sahu
  * @version 1.0
  * @since 16 Nov 2014
- * @author Sunil Sahu
- * @Copyright (c) Sunil Sahu
- * @url www.sunilbooks.com
+ * @see <a href="http://www.sunilbooks.com">www.sunilbooks.com</a>
  */
-
 public class CopyAnArray {
 
-	public static void main(String[] args) {
+    /**
+     * The main method executes the array copy demonstration.
+     * <p>
+     * It creates a source array containing the characters of the word "SUNRAYS",
+     * then copies a subset of this array into a destination array using 
+     * {@code System.arraycopy}, and finally prints the contents of the destination array.
+     * </p>
+     * 
+     * @param args command-line arguments (not used)
+     */
+    public static void main(String[] args) {
 
-		char[] copyFrom = { 'S', 'U', 'N', 'R', 'A', 'Y', 'S' };
-		char[] copyTo = new char[4];
+        char[] copyFrom = { 'S', 'U', 'N', 'R', 'A', 'Y', 'S' };
+        char[] copyTo = new char[4];
 
-		/**
-		 * Parameters of System.arraycopy() method are 
-		 * Source Array, 
-		 * Start Index of Source Array, 
-		 * Target Array 
-		 * Start Index of destination array 
-		 * No of elements to be copied
-		 */
+        /**
+         * Copies 4 elements from the {@code copyFrom} array starting at index 3
+         * to the {@code copyTo} array starting at index 0.
+         */
+        System.arraycopy(copyFrom, 3, copyTo, 0, 4);
 
-		System.arraycopy(copyFrom, 3, copyTo, 0, 4);
-
-		System.out.println(new String(copyTo));
-		
-	}
+        System.out.println(new String(copyTo)); // Outputs: RAYS
+    }
 }
