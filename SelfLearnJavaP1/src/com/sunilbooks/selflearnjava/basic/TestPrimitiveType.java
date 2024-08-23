@@ -70,6 +70,13 @@ public class TestPrimitiveType {
 		char singleQuote = '\'';
 		char backslash = '\\';
 
+		System.out.println("Backspace : " + backspace);
+		System.out.println("Tab : " + tab);
+		System.out.println("Line Feed : " + lineFeed);
+		System.out.println("Form Feed : " + formFeed);
+		System.out.println("Carriage Return : " + carriageReturn);
+		System.out.println("Double Quote : " + doubleQuote);
+		System.out.println("Single Quote : " + singleQuote);
+		System.out.println("Backslash : " + backslash);
 	}
-
 }
