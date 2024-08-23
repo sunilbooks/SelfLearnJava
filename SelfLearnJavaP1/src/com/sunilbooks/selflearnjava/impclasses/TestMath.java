@@ -9,18 +9,44 @@ package com.sunilbooks.selflearnjava.impclasses;
  * @Copyright (c) Sunil Sahu
  * @url www.sunilbooks.com
  */
-
 public class TestMath {
 
-	public static void main(String[] args) {
+	/**
+	 * Calculate the maximum of two numbers using Math.max()
+	 */
+	int maxVal = Math.max(2, 5);
 
-		int maxVal = Math.max(2, 5);
-		int minVal = Math.min(2, 5);
-		double absoluteVal = Math.abs(-3.7);
-		double expVal = Math.exp(10);
-		double randomNo = Math.random();
-		double sqrtVal = Math.sqrt(4);
-		double ceilVal = Math.ceil(5.4);
+	/**
+	 * Calculate the minimum of two numbers using Math.min()
+	 */
+	int minVal = Math.min(2, 5);
+
+	/**
+	 * Calculate the absolute value of a number using Math.abs()
+	 */
+	double absoluteVal = Math.abs(-3.7);
+
+	/**
+	 * Calculate the exponential value of a number using Math.exp()
+	 */
+	double expVal = Math.exp(10);
+
+	/**
+	 * Generate a random number between 0.0 and 1.0 using Math.random()
+	 */
+	double randomNo = Math.random();
+
+	/**
+	 * Calculate the square root of a number using Math.sqrt()
+	 */
+	double sqrtVal = Math.sqrt(4);
+
+	/**
+	 * Calculate the smallest integer greater than or equal to a number using Math.ceil()
+	 */
+	double ceilVal = Math.ceil(5.4);
+
+	public static void main(String[] args) {
 
 		System.out.println("Math functions");
 		System.out.println("Max 2,5: " + maxVal);
