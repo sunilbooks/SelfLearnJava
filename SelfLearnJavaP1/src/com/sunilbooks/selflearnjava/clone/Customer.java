@@ -40,4 +40,36 @@ public class Customer implements Cloneable {
 		return c;
 	}
 
+	public static void main(String[] args) throws Exception {
+		Customer c1 = new Customer("John");
+		Customer c2 = (Customer) c1.clone();
+
+		c2.name = "Jane";
+		c2.account.balance = 20;
+
+		System.out.println("Customer 1 Name: " + c1.name);
+		System.out.println("Customer 1 Account Balance: " + c1.account.balance);
+		System.out.println("Customer 2 Name: " + c2.name);
+		System.out.println("Customer 2 Account Balance: " + c2.account.balance);
+	}
+}
+
+class BankAccount implements Cloneable {
+	public double balance = 0;
+
+	public BankAccount(double b) {
+		balance = b;
+	}
+
+	public Object clone() throws CloneNotSupportedException {
+		return super.clone();
+	}
+}
+
+class CustomerAddress {
+	public String street = null;
+
+	public CustomerAddress() {
+		street = "123 Main St";
+	}
 }
