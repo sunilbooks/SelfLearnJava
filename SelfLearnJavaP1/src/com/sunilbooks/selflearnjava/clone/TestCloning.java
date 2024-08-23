@@ -33,6 +33,45 @@ public class TestCloning {
 		System.out.println("Balance of Account : " + c2.account.balance);
 		System.out.println("City : " + c2.address.city);
 	}
+}
+
+class Customer implements Cloneable {
+
+	public String name = null;
+	public BankAccount account = null;
+	public CustomerAddress address = null;
+
+	public Customer(String n) {
+		name = n;
+		account = new BankAccount(10);
+		address = new CustomerAddress();
+	}
+
+	public Object clone() throws CloneNotSupportedException {
+		Customer c = (Customer) super.clone();
+		c.account = (BankAccount) account.clone();
+		c.address = address; // shallow clone of address
+		return c;
+	}
+}
+
+class BankAccount implements Cloneable {
+	public double balance = 0;
+
+	public BankAccount(double b) {
+		balance = b;
+	}
+
+	public Object clone() throws CloneNotSupportedException {
+		return super.clone();
+	}
+}
+
+class CustomerAddress {
+	public String street = null;
+	public String city = null;
+	public String pin = null;
+}
 
 	/**
 	 * OUTPUT 
