@@ -1,7 +1,7 @@
-package com.sunilbooks.selflearnjava.collection;
+package com.sunilbooks.selflearnjava.clone;
 
 /**
- * A Java bean that contains Employee attributes and methods
+ * A program to test Deep cloning.
  * 
  * @version 1.0
  * @since 16 Nov 2014
@@ -9,80 +9,66 @@ package com.sunilbooks.selflearnjava.collection;
  * @Copyright (c) Sunil Sahu
  * @url www.sunilbooks.com
  */
+public class TestCloning {
 
-public class Employee {
+	public static void main(String[] args) throws Exception {
 
-	private int employeeId;
-	private String firstName;
-	private String lastName;
+		Customer c1 = new Customer("Ram");
+		c1.address.city = "Mumbai";
 
-	/**
-	 * Default constructor
-	 */
-	public Employee() {
+		// Clone the customer and change values
+		Customer c2 = (Customer) c1.clone();
+		c2.name = "Balram";
+		c2.account.balance = 20;
+		c2.address.city = "Delhi";
+
+		System.out.println("Original Object ");
+		System.out.println("Name : " + c1.name);
+		System.out.println("Balance of Account : " + c1.account.balance);
+		System.out.println("City : " + c1.address.city);
+
+		System.out.println("\n--------------------------");
+		System.out.println("Cloned Object");
+		System.out.println("Name : " + c2.name);
+		System.out.println("Balance of Account : " + c2.account.balance);
+		System.out.println("City : " + c2.address.city);
+	}
+}
+
+class Customer implements Cloneable {
+
+	public String name = null;
+	public BankAccount account = null;
+	public CustomerAddress address = null;
+
+	public Customer(String n) {
+		name = n;
+		account = new BankAccount(10);
+		address = new CustomerAddress();
 	}
 
-	/**
-	 * Parameterized constructor
-	 * 
-	 * @param employeeId
-	 * @param firstName
-	 * @param lastName
-	 */
-	public Employee(int employeeId, String firstName, String lastName) {
-		this.employeeId = employeeId;
-		this.firstName = firstName;
-		this.lastName = lastName;
+	public Object clone() throws CloneNotSupportedException {
+		Customer c = (Customer) super.clone();
+		c.account = (BankAccount) account.clone();
+		c.address = address; // shallow clone of address
+		return c;
+	}
+}
+
+class BankAccount implements Cloneable {
+	public double balance = 0;
+
+	public BankAccount(double b) {
+		balance = b;
 	}
 
-	public int getEmployeeId() {
-		return employeeId;
+	public Object clone() throws CloneNotSupportedException {
+		return super.clone();
 	}
+}
 
-	public void setEmployeeId(int employeeId) {
-		this.employeeId = employeeId;
-	}
-
-	public String getFirstName() {
-		return firstName;
-	}
-
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
-
-	public String getLastName() {
-		return lastName;
-	}
-
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
-
-	@Override
-	public String toString() {
-		return employeeId + "," + lastName + "," + firstName;
-	}
-
-	/**
-	 * compares two Employee objects by employee id
-	 */
-	public boolean equals(Object o) {
-		if (o == null)
-			return false;
-		if (!(o instanceof Employee))
-			return false;
-		Employee other = (Employee) o;
-
-		return this.employeeId == other.employeeId;
-	}
-
-	/**
-	 * Employee ID is become hashcode to uniquely identify object in a Map
-	 */
-	@Override
-	public int hashCode() {
-		return employeeId;
-	}
-
+class CustomerAddress {
+	public String street = null;
+	public String city = null;
+	public String pin = null;
 }
