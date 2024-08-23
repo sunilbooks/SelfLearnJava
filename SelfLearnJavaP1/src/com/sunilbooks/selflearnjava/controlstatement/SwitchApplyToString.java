@@ -1,7 +1,8 @@
 package com.sunilbooks.selflearnjava.controlstatement;
 
 /**
- * Example program of SWITCH control statement that applied to String
+ * Example program of IF-ELSE control statement that prints grade of a Student
+ * on the basis of his marks
  * 
  * @version 1.0
  * @since 16 Nov 2014
@@ -10,51 +11,40 @@ package com.sunilbooks.selflearnjava.controlstatement;
  * @url www.sunilbooks.com
  * 
  */
-
-public class SwitchApplyToString {
+public class StudentGrade {
 
 	public static void main(String[] args) {
 
-		String month = "March";
+		// Marks of Student
+		int marks = 80;
 
-		switch (month) {
+		if (marks >= 90) {
+			System.out.println("Grade A ");
+		} else if (marks >= 80) {
+			System.out.println("Grade B ");
+		} else if (marks >= 70) {
+			System.out.println("Grade C ");
+		} else if (marks >= 60) {
+			System.out.println("Grade D ");
+		} else {
+			System.out.println("Grade F ");
+		}
 
-		case "January":
-			System.out.println("1st Month The Year");
-			break;
-		case "February":
-			System.out.println("2nd Month The Year");
-			break;
-		case "March":
-			System.out.println("3rd Month The Year");
-			break;
-		case "April":
-			System.out.println("4th Month The Year");
-			break;
-		case "May":
-			System.out.println("5th Month The Year");
-			break;
-		case "June":
-			System.out.println("6th Month The Year");
-			break;
-		case "July":
-			System.out.println("7th Month The Year");
-			break;
-		case "August":
-			System.out.println("8th Month The Year");
-			break;
-		case "September":
-			System.out.println("9th Month The Year");
-			break;
-		case "October":
-			System.out.println("10th Month The Year");
-			break;
-		case "November":
-			System.out.println("11th Month The Year");
-			break;
-		case "December":
-			System.out.println("12th Month The Year");
-			break;
+		// Ask user to input marks
+		java.util.Scanner scanner = new java.util.Scanner(System.in);
+		System.out.println("Enter your marks: ");
+		marks = scanner.nextInt();
+
+		if (marks >= 90) {
+			System.out.println("Grade A ");
+		} else if (marks >= 80) {
+			System.out.println("Grade B ");
+		} else if (marks >= 70) {
+			System.out.println("Grade C ");
+		} else if (marks >= 60) {
+			System.out.println("Grade D ");
+		} else {
+			System.out.println("Grade F ");
 		}
 	}
 }
