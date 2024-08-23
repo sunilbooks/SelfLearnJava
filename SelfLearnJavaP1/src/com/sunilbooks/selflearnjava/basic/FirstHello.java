@@ -13,16 +13,16 @@ package com.sunilbooks.selflearnjava.basic;
 public class FirstHello {
 	public static void main(String[] args) {
 
-		System.out.println("Hello SUNRAYS");
+		System.out.println("Hello (sun)Rays");
 
 		// Define a string variable and run same program
-		String name = "SUNRAYS";
+		String name = "(sun)Rays";
 		System.out.println("Hello " + name);
 
-		// Print "Hello SUNRAYS" five times.
+		// Print "Hello (sun)Rays" five times.
 		int i = 0;
 		while (i < 5) {
-			System.out.println(i + " Hello SUNRAYS");
+			System.out.println(i + " Hello (sun)Rays");
 			i++;
 		}
 
