@@ -11,35 +11,35 @@ package com.sunilbooks.selflearnjava.basic;
  */
 public class TestArithmeticOperators {
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 
-        // Arithmetic Operators
-        int a = 17;
-        int b = 5;
-        System.out.println("a = " + a);
-        System.out.println("b = " + b);
+		// Arithmetic Operators
+		int a = 17;
+		int b = 5;
+		System.out.println("a = " + a);
+		System.out.println("b = " + b);
 
-        int val = a + b; // Addition
-        System.out.println("a + b = " + val);
+		int val = a + b; // Addition
+		System.out.println("a + b = " + val);
 
-        val = a - b; // Subtraction
-        System.out.println("a - b = " + val);
+		val = a - b; // Subtraction
+		System.out.println("a - b = " + val);
 
-        val = a * b; // Multiplication
-        System.out.println("a * b = " + val);
+		val = a * b; // Multiplication
+		System.out.println("a * b = " + val);
 
-        val = a / b; // Division
-        System.out.println("a / b = " + val);
+		val = a / b; // Division
+		System.out.println("a / b = " + val);
 
-        val = a % b; // Modulo
-        System.out.println("a % b = " + val);
+		val = a % b; // Modulo
+		System.out.println("a % b = " + val);
 
-        // Unary Operators
+		// Unary Operators
 
-        val = ++a; // Increment by 1
-        System.out.println("++a = " + val);
+		val = ++a; // Increment by 1
+		System.out.println("++a = " + val);
 
-        val = b--; // Decrement by 1
-        System.out.println("b-- = " + val);
-    }
+		val = b--; // Decrement by 1
+		System.out.println("b-- = " + val);
+	}
 }

@@ -15,7 +15,7 @@ public class Employee extends Person {
 	public Employee() {
 	}
 
-	public Employee(String name, String add, float sal) {
+	public Employee(float sal, String add, String name) {
 		super(name, add);
 		salary = sal;
 	}

@@ -1,4 +1,5 @@
 package com.sunilbooks.selflearnjava.basic;
+
 /**
  * Simple program to Print "Hello Java".
  * 
@@ -12,7 +13,7 @@ package com.sunilbooks.selflearnjava.basic;
 public class HelloJava {
 
 	public static void main(String[] args) {
-System.out.println("Hello Java");
+		System.out.println("Hello Java");
 	}
 
 }

@@ -1,7 +1,8 @@
 package com.sunilbooks.selflearnjava.basic;
 
 /**
- * A simple most example in JAVA that will print Hello SUNRAYS at console. This program will be your very first program in Java.
+ * A simple most example in JAVA that will print Hello SUNRAYS at console. This
+ * program will be your very first program in Java.
  * 
  * @version 1.0
  * @since 16 Nov 2014

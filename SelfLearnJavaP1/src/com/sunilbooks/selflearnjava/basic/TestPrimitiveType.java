@@ -1,4 +1,5 @@
 package com.sunilbooks.selflearnjava.basic;
+
 /**
  * Example to Test Primitive Data Types
  * 

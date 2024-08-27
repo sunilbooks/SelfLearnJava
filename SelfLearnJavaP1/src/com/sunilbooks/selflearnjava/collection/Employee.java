@@ -1,7 +1,7 @@
-package com.sunilbooks.selflearnjava.clone;
+package com.sunilbooks.selflearnjava.collection;
 
 /**
- * A program to test Deep cloning.
+ * Represents an employee with a last name and first name.
  * 
  * @version 1.0
  * @since 16 Nov 2014
@@ -9,66 +9,41 @@ package com.sunilbooks.selflearnjava.clone;
  * @Copyright (c) Sunil Sahu
  * @url www.sunilbooks.com
  */
-public class TestCloning {
+public class Employee {
+    private String lastName;
+    private String firstName;
 
-	public static void main(String[] args) throws Exception {
+    /**
+     * Constructs an Employee with the specified last name and first name.
+     * 
+     * @param lastName the last name of the employee
+     * @param firstName the first name of the employee
+     */
+    public Employee(String lastName, String firstName) {
+        this.lastName = lastName;
+        this.firstName = firstName;
+    }
 
-		Customer c1 = new Customer("Ram");
-		c1.address.city = "Mumbai";
+    /**
+     * Returns the last name of the employee.
+     * 
+     * @return the last name of the employee
+     */
+    public String getLastName() {
+        return lastName;
+    }
 
-		// Clone the customer and change values
-		Customer c2 = (Customer) c1.clone();
-		c2.name = "Balram";
-		c2.account.balance = 20;
-		c2.address.city = "Delhi";
+    /**
+     * Returns the first name of the employee.
+     * 
+     * @return the first name of the employee
+     */
+    public String getFirstName() {
+        return firstName;
+    }
 
-		System.out.println("Original Object ");
-		System.out.println("Name : " + c1.name);
-		System.out.println("Balance of Account : " + c1.account.balance);
-		System.out.println("City : " + c1.address.city);
-
-		System.out.println("\n--------------------------");
-		System.out.println("Cloned Object");
-		System.out.println("Name : " + c2.name);
-		System.out.println("Balance of Account : " + c2.account.balance);
-		System.out.println("City : " + c2.address.city);
-	}
-}
-
-class Customer implements Cloneable {
-
-	public String name = null;
-	public BankAccount account = null;
-	public CustomerAddress address = null;
-
-	public Customer(String n) {
-		name = n;
-		account = new BankAccount(10);
-		address = new CustomerAddress();
-	}
-
-	public Object clone() throws CloneNotSupportedException {
-		Customer c = (Customer) super.clone();
-		c.account = (BankAccount) account.clone();
-		c.address = address; // shallow clone of address
-		return c;
-	}
-}
-
-class BankAccount implements Cloneable {
-	public double balance = 0;
-
-	public BankAccount(double b) {
-		balance = b;
-	}
-
-	public Object clone() throws CloneNotSupportedException {
-		return super.clone();
-	}
-}
-
-class CustomerAddress {
-	public String street = null;
-	public String city = null;
-	public String pin = null;
+    @Override
+    public String toString() {
+        return firstName + " " + lastName;
+    }
 }

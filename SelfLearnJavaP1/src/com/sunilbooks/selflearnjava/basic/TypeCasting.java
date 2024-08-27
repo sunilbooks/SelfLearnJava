@@ -10,7 +10,6 @@ package com.sunilbooks.selflearnjava.basic;
  * @url www.sunilbooks.com
  */
 
-
 public class TypeCasting {
 
 	public static void main(String[] args) {

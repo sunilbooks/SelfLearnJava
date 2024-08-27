@@ -24,8 +24,6 @@ public class TestStaticBlock {
 	}
 
 	/**
-	 * I will call first! 
-	 * I will call second!
-	 * I will call third!!
+	 * I will call first! I will call second! I will call third!!
 	 */
 }

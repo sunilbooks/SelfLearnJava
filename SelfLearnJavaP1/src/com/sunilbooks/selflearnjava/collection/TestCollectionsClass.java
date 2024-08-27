@@ -1,12 +1,9 @@
 package com.sunilbooks.selflearnjava.collection;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
-import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -16,24 +13,27 @@ import java.util.TreeMap;
 import java.util.TreeSet;
 
 /**
- * Test the Collections class and its utility methods for 1. Copy collections 2.
- * Search collections 3. Sort collections 4. Reverse Collections 5. Create empty
- * collections 6. Shuffle collections 7. Synchronize collections
- * 
+ * Demonstrates various utilities provided by the Collections class including
+ * copying, searching, sorting, reversing, shuffling, and synchronizing
+ * collections.
  * 
  * @version 1.0
  * @since 16 Nov 2014
  * @author Sunil Sahu
  * @Copyright (c) Sunil Sahu
  * @url www.sunilbooks.com
- * 
  */
-
 public class TestCollectionsClass {
 
+	/**
+	 * Main method to test various utilities provided by the Collections class.
+	 * 
+	 * @param args command-line arguments (not used)
+	 */
 	public static void main(String[] args) {
 
-		ArrayList a = new ArrayList();
+		// Create and populate an ArrayList
+		ArrayList<String> a = new ArrayList<>();
 		a.add("Zero");
 		a.add("One");
 		a.add("Two");
@@ -41,8 +41,8 @@ public class TestCollectionsClass {
 		a.add("Four");
 		a.add("Five");
 
-		// // Copy collection
-		ArrayList toList = new ArrayList(10);
+		// Copy collection
+		ArrayList<String> toList = new ArrayList<>(10);
 		toList.add("0");
 		toList.add("1");
 		toList.add("2");
@@ -53,64 +53,58 @@ public class TestCollectionsClass {
 		Collections.copy(toList, a);
 		System.out.println("Copied List : " + toList);
 
-		// // Search an elements
+		// Search an element
 		int ind = Collections.binarySearch(a, "Two");
 		System.out.println("Index of element \"Two\" is " + ind);
 
-		// // Sort a collection elements
+		// Sort a collection elements
 		Collections.sort(a);
 		System.out.println("Sorted List : " + a);
 
-		ArrayList employeesList = new ArrayList();
-		employeesList.add(new Employee(1, "Sandeep", "Vishwakarma"));
-		employeesList.add(new Employee(2, "Karan", "Sahu"));
-		employeesList.add(new Employee(3, "Prachi", "Pacharne"));
-		employeesList.add(new Employee(4, "Ashish", "Gupta"));
-		employeesList.add(new Employee(5, "Ranu", "Gupta"));
-		employeesList.add(new Employee(6, "Rahul", "Sahu"));
+		// Employee List
+		List<Employee> employeesList = new ArrayList<>();
+		employeesList.add(new Employee("Vishwakarma", "Sandeep"));
+		employeesList.add(new Employee("Sahu", "Karan"));
+		employeesList.add(new Employee("Pacharne", "Prachi"));
+		employeesList.add(new Employee("Gupta", "Ashish"));
+		employeesList.add(new Employee("Gupta", "Ranu"));
+		employeesList.add(new Employee("Sahu", "Rahul"));
 
 		// Sort collection of employee objects using comparator
 		EmployeeByNameComparator empComp = new EmployeeByNameComparator();
 		Collections.sort(employeesList, empComp);
-		System.out.println("Sorted List By Conparator : " + employeesList);
+		System.out.println("Sorted List By Comparator : " + employeesList);
 
-		// // reverse a collection elements
+		// Reverse a collection elements
 		Collections.reverse(a);
 		System.out.println("Reversed List : " + a);
 
-		// // Create Empty collections
-		Enumeration e = Collections.emptyEnumeration();
-		Iterator it = Collections.emptyIterator();
-		List lt = Collections.emptyList();
-		Set st = Collections.emptySet();
-		Map mp = Collections.emptyMap();
+		// Create Empty collections
+		System.out.println("Empty Collections:");
+		System.out.println("Enumeration: " + Collections.emptyEnumeration());
+		System.out.println("Iterator: " + Collections.emptyIterator());
+		System.out.println("List: " + Collections.emptyList());
+		System.out.println("Set: " + Collections.emptySet());
+		System.out.println("Map: " + Collections.emptyMap());
 
-		// // Shuffle collection
+		// Shuffle collection
 		Collections.shuffle(a);
 		System.out.println("Shuffled List : " + a);
 
-		// // Synchronize Collections
-		// Sync a collection
-		Collection c = Collections.synchronizedCollection(new ArrayList());
+		// Synchronize Collections
+		ArrayList<String> al = new ArrayList<>();
+		List<String> l = Collections.synchronizedList(al);
 
-		// Synchronize List
-		ArrayList al = new ArrayList();
-		List l = Collections.synchronizedList(al);
+		HashSet<String> hs = new HashSet<>();
+		Set<String> s = Collections.synchronizedSet(hs);
 
-		// Synchronize Set
-		HashSet hs = new HashSet();
-		Set s = Collections.synchronizedSet(hs);
+		TreeSet<String> ts = new TreeSet<>();
+		SortedSet<String> ss = Collections.synchronizedSortedSet(ts);
 
-		TreeSet ts = new TreeSet();
-		SortedSet ss = Collections.synchronizedSortedSet(ts);
+		HashMap<String, String> hm = new HashMap<>();
+		Map<String, String> m = Collections.synchronizedMap(hm);
 
-		// Synchronize Map
-		HashMap hm = new HashMap();
-		Map m = Collections.synchronizedMap(hm);
-
-		TreeMap tm = new TreeMap();
-		SortedMap sm = Collections.synchronizedSortedMap(tm);
-
+		TreeMap<String, String> tm = new TreeMap<>();
+		SortedMap<String, String> sm = Collections.synchronizedSortedMap(tm);
 	}
-
 }
