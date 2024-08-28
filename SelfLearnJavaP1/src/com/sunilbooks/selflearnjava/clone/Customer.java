@@ -1,8 +1,9 @@
 package com.sunilbooks.selflearnjava.clone;
 
 /**
- * Represents a customer who holds a bank account. The customer's account is
- * deep cloned, but the customer's address is shallow cloned.
+ * This program is the example of DEEP CLONING. Customer contains BankAccount.
+ * When Customer is cloned BankAccoubt is also cloned. For deep cloning all
+ * containing classes must be clone able.
  * 
  * @version 1.1
  * @since 16 Nov 2014
@@ -12,16 +13,27 @@ package com.sunilbooks.selflearnjava.clone;
  */
 public class Customer implements Cloneable {
 
-	public String name;
-	public BankAccount account;
-	public CustomerAddress address;
+	public String name = null;
+
+	/**
+	 * Customer's account, will be deep cloned
+	 */
+	public BankAccount account = null;
+
+	/**
+	 * Customer's Address. Shallow cloned
+	 */
+	public Address address = null;
 
 	public Customer(String n) {
 		name = n;
 		account = new BankAccount(10);
-		address = new CustomerAddress();
+		address = new Address();
 	}
 
+	/**
+	 * Deep clone the Customer and Account object
+	 */
 	@Override
 	public Object clone() throws CloneNotSupportedException {
 		Customer c = (Customer) super.clone();

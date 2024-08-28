@@ -33,4 +33,19 @@ public class TestCloning {
         System.out.println("Balance of Account: " + c2.account.balance);
         System.out.println("City: " + c2.address.city);
     }
+
+	/**
+	 * OUTPUT 
+	 * 
+	 * Original Object Name : Ram 
+	 * Balance of Account : 10.0 
+	 * City : Delhi
+	 * 
+	 * -------------------------- 
+	 * Cloned Object 
+	 * Name : Balram 
+	 * Balance of Account: 20.0 
+	 * City : Delhi
+	 */
+
 }

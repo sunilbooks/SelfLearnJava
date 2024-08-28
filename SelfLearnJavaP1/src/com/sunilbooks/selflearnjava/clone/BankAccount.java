@@ -9,6 +9,7 @@ package com.sunilbooks.selflearnjava.clone;
  * @Copyright (c) Sunil Sahu
  * @url www.sunilbooks.com
  */
+
 public class BankAccount implements Cloneable {
 
     public double balance = 0;
@@ -23,10 +24,21 @@ public class BankAccount implements Cloneable {
 
     @Override
     public Object clone() throws CloneNotSupportedException {
-        BankAccount clone = (BankAccount) super.clone();
+		BankAccount ba = (BankAccount) super.clone();
         if (this.address != null) {
-            clone.address = (Address) this.address.clone(); // deep clone of Address object
+			ba.address = (Address) this.address.clone(); // deep clone of Address object
         }
-        return clone;
+		return ba;
     }
+
+	public static void main(String[] args) throws Exception {
+
+		BankAccount a1 = new BankAccount(10);
+		BankAccount a2 = (BankAccount) a1.clone();
+		a2.balance = 20;
+
+		System.out.println(a1.balance);
+		System.out.println(a2.balance);
+	}
+
 }
