@@ -1,6 +1,6 @@
 SelfLearn Java By Sunil Sahu
 =============================
-This project contains source code of Self Learn Java Book examples.
+This project includes the source code for the examples in the Self Learn Java Book.
 
 Book topics 
 
@@ -14,8 +14,8 @@ Book topics
 8.	Important Classes
 9.	Object Oriented Programming 
 10.	Exception Handling
-11.     Collections Framework
-12.     Generics
+11. Collections Framework
+12. Generics
 13.	Input and Output 
 14.	Concurrency and Threads 
 15.	Swing ( JSF/AWT )
@@ -24,4 +24,4 @@ Book topics
 18.	Reflection API
 19.	Java Installation and Configuration 
 
-This is Eclipse project that can be downloaded and imported into Eclipse Juno and above version.
+This is an Eclipse project that can be downloaded and imported into Eclipse Juno or later versions.
