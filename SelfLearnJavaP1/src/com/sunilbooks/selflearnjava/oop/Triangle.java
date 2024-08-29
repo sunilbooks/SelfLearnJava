@@ -1,7 +1,8 @@
 package com.sunilbooks.selflearnjava.oop;
 
 /**
- * Inherits Shape class and contains attributes of Triangle.
+ * Inherits the {@code Shape} class and represents a triangle with attributes for base and height.
+ * Provides implementation for calculating the area of the triangle.
  * 
  * @version 1.0
  * @since 16 Nov 2014
@@ -9,41 +10,62 @@ package com.sunilbooks.selflearnjava.oop;
  * @Copyright (c) Sunil Sahu
  * @url www.sunilbooks.com
  */
-
 public class Triangle extends Shape {
 
-	/**
-	 * Base of Triangle
-	 */
-	private int base;
+    /**
+     * Base of the triangle.
+     */
+    private int base;
 
-	/**
-	 * Height of Triangle
-	 */
-	private int height;
+    /**
+     * Height of the triangle.
+     */
+    private int height;
 
-	public int getBase() {
-		return base;
-	}
+    /**
+     * Gets the base of the triangle.
+     * 
+     * @return the base of the triangle
+     */
+    public int getBase() {
+        return base;
+    }
 
-	public void setBase(int base) {
-		this.base = base;
-	}
+    /**
+     * Sets the base of the triangle.
+     * 
+     * @param base the base of the triangle
+     */
+    public void setBase(int base) {
+        this.base = base;
+    }
 
-	public int getHeight() {
-		return height;
-	}
+    /**
+     * Gets the height of the triangle.
+     * 
+     * @return the height of the triangle
+     */
+    public int getHeight() {
+        return height;
+    }
 
-	public void setHeight(int height) {
-		this.height = height;
-	}
+    /**
+     * Sets the height of the triangle.
+     * 
+     * @param height the height of the triangle
+     */
+    public void setHeight(int height) {
+        this.height = height;
+    }
 
-	/**
-	 * Calculates area of Rectangle
-	 */
-	public double area() {
-
-		return (base * height) * 1 / 2;
-	}
+    /**
+     * Calculates the area of the triangle using the formula: (base * height) / 2.
+     * 
+     * @return the area of the triangle
+     */
+    @Override
+    public double area() {
+        return (base * height) / 2.0;
+    }
 
 }

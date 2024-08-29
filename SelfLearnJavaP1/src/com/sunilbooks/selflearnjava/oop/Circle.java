@@ -1,42 +1,54 @@
 package com.sunilbooks.selflearnjava.oop;
 
 /**
- * Inherits Shape class and contains attributes of Circle.
- *
+ * The {@code Circle} class inherits from the {@code Shape} class and represents 
+ * a circle with a specific radius. It includes methods to get and set the radius, 
+ * as well as to calculate the area of the circle.
+ * 
  * @version 1.0
  * @since 16 Nov 2014
+ * @see Shape
  * @author Sunil Sahu
  * @Copyright (c) Sunil Sahu
  * @url www.sunilbooks.com
  */
-
 public class Circle extends Shape {
 
-	/**
-	 * Instance variable contains radius of Circle
-	 */
-	private int radius;
+    /**
+     * The radius of the circle.
+     */
+    private int radius;
 
-	/**
-	 * PI is the constant
-	 */
-	public static final double PI = 3.14; // static variable
+    /**
+     * The constant value of PI, used in the calculation of the area of the circle.
+     */
+    public static final double PI = 3.14;
 
-	public int getRadius() {
-		return radius;
-	}
+    /**
+     * Gets the radius of the circle.
+     * 
+     * @return the radius of the circle
+     */
+    public int getRadius() {
+        return radius;
+    }
 
-	public void setRadius(int radius) {
-		this.radius = radius;
-	}
+    /**
+     * Sets the radius of the circle.
+     * 
+     * @param radius the new radius of the circle
+     */
+    public void setRadius(int radius) {
+        this.radius = radius;
+    }
 
-	/**
-	 * Calculates area of Circle
-	 */
-	public double area() {
-		double area = 0;
-		area = PI * radius * radius;
-		return area;
-	}
+    /**
+     * Calculates and returns the area of the circle.
+     * 
+     * @return the area of the circle
+     */
+    public double area() {
+        return PI * radius * radius;
+    }
 
 }
