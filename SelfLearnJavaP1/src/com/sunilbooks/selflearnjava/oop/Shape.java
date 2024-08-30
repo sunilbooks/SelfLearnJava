@@ -1,7 +1,17 @@
 package com.sunilbooks.selflearnjava.oop;
 
 /**
- * Class contains Shape related attribute and methods.
+ * The {@code Shape} class is an abstract class that represents a geometric shape.
+ * It contains attributes related to the shape, such as color and border width, 
+ * and provides methods to access and modify these attributes. It also defines 
+ * an abstract method {@code area} that must be implemented by subclasses to 
+ * calculate the area of specific shapes.
+ * 
+ * <p>Attributes:</p>
+ * <ul>
+ *     <li>{@code color} - The color of the shape.</li>
+ *     <li>{@code borderWidth} - The width of the shape's border.</li>
+ * </ul>
  * 
  * @version 1.0
  * @since 16 Nov 2014
@@ -9,45 +19,78 @@ package com.sunilbooks.selflearnjava.oop;
  * @Copyright (c) Sunil Sahu
  * @url www.sunilbooks.com
  */
-
-
 public abstract class Shape {
 
-	protected String color = null;
-	protected int borderWidth = 0;
+    /**
+     * The color of the shape.
+     */
+    protected String color = null;
 
-	//Default constructor 
-	public Shape() {
-	}
+    /**
+     * The width of the shape's border.
+     */
+    protected int borderWidth = 0;
 
-	//Parameterized constructor
-	public Shape(String c, int bw) {
-		color = c;
-		borderWidth = bw;
-	}
+    /**
+     * Default constructor for the {@code Shape} class.
+     */
+    public Shape() {
+    }
 
-	public String getColor() {
-		return color;
-	}
+    /**
+     * Parameterized constructor for the {@code Shape} class.
+     * 
+     * @param color the color of the shape
+     * @param borderWidth the width of the shape's border
+     */
+    public Shape(String color, int borderWidth) {
+        this.color = color;
+        this.borderWidth = borderWidth;
+    }
 
-	public void setColor(String color) {
-		this.color = color;
-	}
+    /**
+     * Gets the color of the shape.
+     * 
+     * @return the color of the shape
+     */
+    public String getColor() {
+        return color;
+    }
 
-	public int getBorderWidth() {
-		return borderWidth;
-	}
+    /**
+     * Sets the color of the shape.
+     * 
+     * @param color the new color of the shape
+     */
+    public void setColor(String color) {
+        this.color = color;
+    }
 
-	public void setBorderWidth(int borderWidth) {
-		this.borderWidth = borderWidth;
-	}
+    /**
+     * Gets the width of the shape's border.
+     * 
+     * @return the width of the shape's border
+     */
+    public int getBorderWidth() {
+        return borderWidth;
+    }
 
-	/**
-	 * Area is abstract since its definition is known by it's specialized child
-	 * class.
-	 * 
-	 * @return
-	 */
-	public abstract double area();
+    /**
+     * Sets the width of the shape's border.
+     * 
+     * @param borderWidth the new width of the shape's border
+     */
+    public void setBorderWidth(int borderWidth) {
+        this.borderWidth = borderWidth;
+    }
+
+    /**
+     * Abstract method to calculate the area of the shape. This method must be 
+     * implemented by subclasses of {@code Shape} to provide the specific 
+     * calculation for the area of that shape.
+     * 
+     * @return the area of the shape
+     */
+    public abstract double area();
 
 }

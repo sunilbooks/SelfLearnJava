@@ -1,34 +1,36 @@
 package com.sunilbooks.selflearnjava.oop;
 
 /**
- * Contains AxisBank attributes. It is child class of Bank. It is an example of
- * method overriding and runtime polymorphism.
+ * The {@code AxisBank} class represents a specific bank, Axis Bank. It extends 
+ * the {@code Bank} class, demonstrating method overriding and runtime polymorphism.
  * 
  * @version 1.0
  * @since 16 Nov 2014
+ * @see Bank
  * @author Sunil Sahu
  * @Copyright (c) Sunil Sahu
  * @url www.sunilbooks.com
  */
-
 public class AxisBank extends Bank {
 
-	/**
-	 * Returns Axis Bank interest rate
-	 */
-	@Override
-	public double interestRate() {
-		return 11.25;
-	}
+    /**
+     * Returns the interest rate offered by Axis Bank.
+     * 
+     * @return the interest rate of Axis Bank, which is 11.25%
+     */
+    @Override
+    public double interestRate() {
+        return 11.25;
+    }
 
-	/**
-	 * Return name of the Bank
-	 * 
-	 * @return
-	 */
-	@Override
-	public String getName() {
-		return "Axis Bank";
-	}
+    /**
+     * Returns the name of the bank.
+     * 
+     * @return the name of the bank, which is "Axis Bank"
+     */
+    @Override
+    public String getName() {
+        return "Axis Bank";
+    }
 
 }

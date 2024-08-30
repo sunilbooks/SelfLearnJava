@@ -1,7 +1,9 @@
 package com.sunilbooks.selflearnjava.oop;
 
 /**
- * AutoMobile Class
+ * The {@code Automobile} class represents a basic automobile with properties like
+ * color, speed, gear, and make. It provides methods to get and set these properties 
+ * and to change the gear.
  * 
  * @version 1.0
  * @since 16 Nov 2014
@@ -11,42 +13,97 @@ package com.sunilbooks.selflearnjava.oop;
  */
 public class Automobile {
 
-	private String color = null;
-	private int speed = 0;
-	private int gear = 0;
-	private String make = null;
+    /**
+     * The color of the automobile.
+     */
+    private String color = null;
 
-	public String getColor() {
-		return color;
-	}
+    /**
+     * The speed of the automobile.
+     */
+    private int speed = 0;
 
-	public void setColor(String color) {
-		this.color = color;
-	}
+    /**
+     * The current gear of the automobile.
+     */
+    private int gear = 0;
 
-	public int getSpeed() {
-		return speed;
-	}
+    /**
+     * The make of the automobile (e.g., manufacturer or brand).
+     */
+    private String make = null;
 
-	public void setSpeed(int speed) {
-		this.speed = speed;
-	}
+    /**
+     * Gets the color of the automobile.
+     * 
+     * @return the color of the automobile
+     */
+    public String getColor() {
+        return color;
+    }
 
-	public String getMake() {
-		return make;
-	}
+    /**
+     * Sets the color of the automobile.
+     * 
+     * @param color the new color of the automobile
+     */
+    public void setColor(String color) {
+        this.color = color;
+    }
 
-	public void setMake(String make) {
-		this.make = make;
-	}
+    /**
+     * Gets the speed of the automobile.
+     * 
+     * @return the speed of the automobile
+     */
+    public int getSpeed() {
+        return speed;
+    }
 
-	public int getGear() {
-		return gear;
-	}
+    /**
+     * Sets the speed of the automobile.
+     * 
+     * @param speed the new speed of the automobile
+     */
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
 
-	public int changeGear(int g) {
-		gear += g;
-		return gear;
-	}
+    /**
+     * Gets the make of the automobile.
+     * 
+     * @return the make of the automobile
+     */
+    public String getMake() {
+        return make;
+    }
 
+    /**
+     * Sets the make of the automobile.
+     * 
+     * @param make the new make of the automobile
+     */
+    public void setMake(String make) {
+        this.make = make;
+    }
+
+    /**
+     * Gets the current gear of the automobile.
+     * 
+     * @return the current gear of the automobile
+     */
+    public int getGear() {
+        return gear;
+    }
+
+    /**
+     * Changes the gear of the automobile by the specified amount.
+     * 
+     * @param g the amount to change the gear by
+     * @return the new gear of the automobile
+     */
+    public int changeGear(int g) {
+        gear += g;
+        return gear;
+    }
 }
