@@ -4,8 +4,10 @@ import java.net.*;
 import java.util.Scanner;
 import java.io.*;
 
-/*
- * Sends a search parameter to www.ask.com and read the search results.
+/**
+ * Sends a search parameter to www.ask.com and reads the search results. This
+ * class demonstrates how to send data via HTTP GET request and read the
+ * response.
  * 
  * @version 1.0
  * @since 16 Nov 2014
@@ -13,9 +15,17 @@ import java.io.*;
  * @Copyright (c) Sunil Sahu
  * @url www.sunilbooks.com
  */
-
 public class URLWriter {
 
+	/**
+	 * Main method to send a search parameter to a web URL and read the search
+	 * results. Opens a connection to a specified URL, writes a query parameter, and
+	 * retrieves the response.
+	 * 
+	 * @param args command-line arguments (not used)
+	 * @throws Exception if an error occurs while opening the URL connection or
+	 *                   reading the response
+	 */
 	public static void main(String[] args) throws Exception {
 
 		URL url = new URL("http://www.ask.com/web");

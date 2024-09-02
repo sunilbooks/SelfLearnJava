@@ -4,7 +4,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * Test date format
+ * Demonstrates various date formats using the `SimpleDateFormat` class. Shows
+ * how to format the current date in different patterns and parse a string into
+ * a `Date` object.
  * 
  * @version 1.0
  * @since 16 Nov 2014
@@ -15,12 +17,15 @@ import java.util.Date;
 public class TestDateFormat {
 	public static void main(String[] args) throws Exception {
 
+		// Get the current date
 		Date today = new Date();
+
+		// Define and apply different date formats
 		SimpleDateFormat format1 = new SimpleDateFormat("dd/MM/yy");
 		String strDate = format1.format(today);
 		System.out.println("Format#1 :" + strDate);
 
-		SimpleDateFormat format2 = new SimpleDateFormat("MMM dd,yyyy");
+		SimpleDateFormat format2 = new SimpleDateFormat("MMM dd, yyyy");
 		strDate = format2.format(today);
 		System.out.println("Format#2 :" + strDate);
 
@@ -28,8 +33,7 @@ public class TestDateFormat {
 		strDate = format3.format(today);
 		System.out.println("Format#3 :" + strDate);
 
-		SimpleDateFormat format4 = new SimpleDateFormat(
-				"yyyy.MM.dd G 'at' hh:mm:ss z");
+		SimpleDateFormat format4 = new SimpleDateFormat("yyyy.MM.dd G 'at' hh:mm:ss z");
 		strDate = format4.format(today);
 		System.out.println("Format#4 :" + strDate);
 
@@ -41,12 +45,11 @@ public class TestDateFormat {
 		strDate = format6.format(today);
 		System.out.println("Format#6 :" + strDate);
 
-		SimpleDateFormat format7 = new SimpleDateFormat(
-				"yyyy.MMMMM.dd GGG hh:mm aaa");
+		SimpleDateFormat format7 = new SimpleDateFormat("yyyy.MMMMM.dd GGG hh:mm aaa");
 		strDate = format7.format(today);
 		System.out.println("Format#7 :" + strDate);
 
-		// Parse String to Date
+		// Parse a string to a Date object
 		Date parsedDate = format1.parse("15/08/1947");
 		System.out.println("Parsed Date :" + parsedDate);
 

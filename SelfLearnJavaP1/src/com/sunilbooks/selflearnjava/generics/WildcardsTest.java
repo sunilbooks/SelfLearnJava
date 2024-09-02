@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Class contains Wildcards examples
+ * Demonstrates the use of wildcards with generics.
+ * Includes methods for displaying and summing a list of numbers with upper bounds.
  * 
  * @version 1.0
  * @since 16 Nov 2014
@@ -12,40 +13,41 @@ import java.util.List;
  * @Copyright (c) Sunil Sahu
  * @url www.sunilbooks.com
  */
-
 public class WildcardsTest {
 
-	/**
-	 * Upper bound list to Number class
-	 * 
-	 * @param list
-	 */
-	public static void display(List<? extends Number> list) {
-		for (Number e : list) {
-			System.out.println(e);
-		}
-	}
+    /**
+     * Displays each element in a list of type that extends Number.
+     * The list can contain any subclass of Number.
+     * 
+     * @param list a list of elements that extend Number
+     */
+    public static void display(List<? extends Number> list) {
+        for (Number e : list) {
+            System.out.println(e);
+        }
+    }
 
-	/**
-	 * Upper bound list to Number class
-	 * 
-	 * @param list
-	 * @return total
-	 */
-	public static double sum(List<? extends Number> list) {
-		double total = 0;
-		for (Number e : list) {
-			total += e.doubleValue();
-		}
-		return total;
-	}
+    /**
+     * Computes the sum of elements in a list of type that extends Number.
+     * The list can contain any subclass of Number, and the sum is computed using double precision.
+     * 
+     * @param list a list of elements that extend Number
+     * @return the sum of the elements in the list
+     */
+    public static double sum(List<? extends Number> list) {
+        double total = 0;
+        for (Number e : list) {
+            total += e.doubleValue();
+        }
+        return total;
+    }
 
-	public static void main(String[] args) {
-		List<Integer> l = new ArrayList<Integer>();
-		l.add(10);
-		l.add(20);
-		display(l);
-		System.out.println(sum(l));
-	}
+    public static void main(String[] args) {
+        List<Integer> l = new ArrayList<Integer>();
+        l.add(10);
+        l.add(20);
+        display(l);
+        System.out.println(sum(l));
+    }
 
 }

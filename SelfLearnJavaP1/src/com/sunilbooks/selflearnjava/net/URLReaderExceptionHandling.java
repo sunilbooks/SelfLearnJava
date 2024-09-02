@@ -6,9 +6,10 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Scanner;
 
-/*
- * Reads text from a URL and displays at console using java.net.URL class.
- * It handles exception and prints user friendly message
+/**
+ * Reads text from a specified URL and displays it on the console using the
+ * {@link java.net.URL} class. This class handles exceptions and prints
+ * user-friendly messages in case of errors.
  * 
  * @version 1.0
  * @since 16 Nov 2014
@@ -16,9 +17,16 @@ import java.util.Scanner;
  * @Copyright (c) Sunil Sahu
  * @url www.sunilbooks.com
  */
-
 public class URLReaderExceptionHandling {
 
+	/**
+	 * Main method to execute the URL reading. Opens a connection to a given URL,
+	 * retrieves its contents, and prints the text to the console. Handles
+	 * exceptions such as {@link MalformedURLException} and {@link IOException} with
+	 * user-friendly messages.
+	 * 
+	 * @param args command-line arguments (not used)
+	 */
 	public static void main(String[] args) {
 
 		try {
@@ -52,5 +60,4 @@ public class URLReaderExceptionHandling {
 			System.out.println("Input Output Error");
 		}
 	}
-
 }

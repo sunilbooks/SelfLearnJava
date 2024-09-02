@@ -4,7 +4,11 @@ import java.io.File;
 import java.util.Date;
 
 /**
- * gets the File information for file system and print.
+ * Retrieves and prints information about a specified file in the file system.
+ * <p>
+ * This class uses the {@link File} class to check for file existence, retrieve
+ * file attributes such as name, path, access permissions, modification date,
+ * and length. It also distinguishes between files and directories.
  * 
  * @version 1.0
  * @since 16 Nov 2014
@@ -12,40 +16,49 @@ import java.util.Date;
  * @Copyright (c) Sunil Sahu
  * @url www.sunilbooks.com
  */
-
 public class FileInfo {
 
+	/**
+	 * Main method to display file information.
+	 * <p>
+	 * This method creates a {@link File} object for a specified file, checks if the
+	 * file exists, and prints various attributes of the file, including its name,
+	 * path, access permissions, whether it is a file or directory, its last
+	 * modification date, and its length.
+	 * 
+	 * @param args Command-line arguments (not used)
+	 */
 	public static void main(String[] args) {
 
 		// Refer to a.txt file
 		File f = new File("c:/a.txt");
 
-		// Check file does exist
+		// Check if file exists
 		if (f.exists()) {
-			// Name of file
-			System.out.println("Name:" + f.getName());
-			// Path of File
-			System.out.println("Path:" + f.getAbsolutePath());
+			// Name of the file
+			System.out.println("Name: " + f.getName());
+			// Path of the file
+			System.out.println("Path: " + f.getAbsolutePath());
 
-			// Check access permission
-			System.out.println("Access permission");
-			System.out.println("Writable:" + f.canWrite());
-			System.out.println("Readable:" + f.canRead());
+			// Check access permissions
+			System.out.println("Access permission:");
+			System.out.println("Writable: " + f.canWrite());
+			System.out.println("Readable: " + f.canRead());
 
-			// Check name is of director or a file
-			System.out.println("Is File:" + f.isFile());
-			System.out.println("Is Dir:" + f.isDirectory());
+			// Check if it is a file or directory
+			System.out.println("Is File: " + f.isFile());
+			System.out.println("Is Directory: " + f.isDirectory());
 
-			// Check File's last modified date
+			// Check file's last modified date
 			Date d = new Date(f.lastModified());
-			System.out.println("Date Modified:" + d);
+			System.out.println("Date Modified: " + d);
 
-			// Length of File
+			// Length of the file
 			long length = f.length();
-			System.out.println("Length:" + length + " bytes");
+			System.out.println("Length: " + length + " bytes");
 
 		} else {
-			System.out.println("File does not exists");
+			System.out.println("File does not exist.");
 		}
 	}
 
