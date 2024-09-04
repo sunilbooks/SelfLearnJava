@@ -5,7 +5,12 @@ import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
 
 /**
- * Serialize an Externalized object and write to a file
+ * Serializes an Externalizable object and writes it to a file.
+ * <p>
+ * This class demonstrates how to serialize an object of the {@code MarksheetBeanExt} class
+ * and write it to a file using {@code ObjectOutputStream}. The serialized object is saved
+ * to the file specified by the path "f:/object.ser".
+ * </p>
  * 
  * @version 1.0
  * @since 16 Nov 2014
@@ -13,9 +18,15 @@ import java.io.ObjectOutputStream;
  * @Copyright (c) Sunil Sahu
  * @url www.sunilbooks.com
  */
-
 public class WriteExtObject {
 
+	/**
+	 * The entry point of the application. It creates an instance of {@code MarksheetBeanExt},
+	 * sets its values, serializes it, and writes it to a file.
+	 * 
+	 * @param args command-line arguments (not used)
+	 * @throws Exception if an I/O error occurs or the object cannot be serialized
+	 */
 	public static void main(String[] args) throws Exception {
 
 		FileOutputStream file = new FileOutputStream("f:/object.ser");
@@ -23,7 +34,7 @@ public class WriteExtObject {
 		// Wrap file with ObjectOutputStream
 		ObjectOutputStream out = new ObjectOutputStream(file);
 
-		// Create objects and set values
+		// Create an object of MarksheetBeanExt and set values
 		MarksheetBeanExt m = new MarksheetBeanExt();
 		m.setName("Raju");
 		m.setMaths(90);
@@ -31,10 +42,11 @@ public class WriteExtObject {
 		m.setChemistry(89);
 		m.setTemp(99);
 
+		// Print total marks and percentage
 		System.out.println("Total Marks : " + m.getTotal());
 		System.out.println("Percentage : " + m.getPercentage());
 
-		// Serialize object
+		// Serialize the object
 		out.writeObject(m);
 
 		// Close the file

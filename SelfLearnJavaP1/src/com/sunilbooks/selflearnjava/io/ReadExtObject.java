@@ -4,7 +4,12 @@ import java.io.FileInputStream;
 import java.io.ObjectInputStream;
 
 /**
- * Deserialize an Externalized object from a File.
+ * Reads and deserializes an {@code Externalizable} object from a file.
+ * <p>
+ * This class demonstrates how to read an object serialized using the
+ * {@code Externalizable} interface. It reads the object from a file and prints
+ * its properties to the console.
+ * </p>
  * 
  * @version 1.0
  * @since 16 Nov 2014
@@ -12,9 +17,15 @@ import java.io.ObjectInputStream;
  * @Copyright (c) Sunil Sahu
  * @url www.sunilbooks.com
  */
-
 public class ReadExtObject {
 
+	/**
+	 * The entry point of the application. It reads an {@code Externalizable} object
+	 * from a file and prints its properties.
+	 * 
+	 * @param args command-line arguments (not used)
+	 * @throws Exception if an I/O error occurs or the object cannot be deserialized
+	 */
 	public static void main(String[] args) throws Exception {
 
 		FileInputStream file = new FileInputStream("f:/object.ser");

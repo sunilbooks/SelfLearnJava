@@ -1,10 +1,14 @@
 package com.sunilbooks.selflearnjava.net;
 
-import java.io.*;
-import java.net.*;
+import java.io.IOException;
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.InetAddress;
 
-/*
- * Created UDP client that send an empty packet to server and received today's quote.
+/**
+ * UDP client that sends an empty packet to a server and receives a quote. This
+ * client sends a request to the server and then waits for a response containing
+ * the quote of the moment.
  * 
  * @version 1.0
  * @since 16 Nov 2014
@@ -12,9 +16,15 @@ import java.net.*;
  * @Copyright (c) Sunil Sahu
  * @url www.sunilbooks.com
  */
-
 public class QuoteClient {
 
+	/**
+	 * Main method to execute the UDP client. Starts a UDP socket, sends an empty
+	 * packet to the server, waits for a response, and prints the received quote.
+	 * 
+	 * @param args command-line arguments (not used)
+	 * @throws IOException if an I/O error occurs while sending or receiving packets
+	 */
 	public static void main(String[] args) throws IOException {
 
 		// Start UDP Socket on a port assigned by OS
@@ -27,8 +37,7 @@ public class QuoteClient {
 		InetAddress address = InetAddress.getByName("127.0.0.1");
 
 		// Create a new packet with Server IP Address and Port Number
-		DatagramPacket packet = new DatagramPacket(buf, buf.length, address,
-				4445);
+		DatagramPacket packet = new DatagramPacket(buf, buf.length, address, 4445);
 
 		// Send packet
 		socket.send(packet);
@@ -40,7 +49,7 @@ public class QuoteClient {
 		socket.receive(packet);
 
 		// Convert byte into string
-		String received = new String(packet.getData());
+		String received = new String(packet.getData()).trim();
 
 		System.out.println("Quote of the Moment: " + received);
 

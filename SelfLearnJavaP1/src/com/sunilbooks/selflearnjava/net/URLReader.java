@@ -6,8 +6,10 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Scanner;
 
-/*
- * Reads text from a URL and displays at console using java.net.URL class.
+/**
+ * Reads text from a specified URL and displays it on the console using the
+ * {@link java.net.URL} class. This class demonstrates how to open a connection
+ * to a URL, read its contents, and print them.
  * 
  * @version 1.0
  * @since 16 Nov 2014
@@ -15,9 +17,16 @@ import java.util.Scanner;
  * @Copyright (c) Sunil Sahu
  * @url www.sunilbooks.com
  */
-
 public class URLReader {
 
+	/**
+	 * Main method to execute the URL reading. Opens a connection to a given URL,
+	 * retrieves its contents, and prints the text to the console.
+	 * 
+	 * @param args command-line arguments (not used)
+	 * @throws Exception if an error occurs while opening the stream or reading the
+	 *                   URL
+	 */
 	public static void main(String[] args) throws Exception {
 
 		URL u = new URL("http://www.sunrays.co.in:80/Home");

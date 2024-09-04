@@ -1,8 +1,14 @@
 package com.sunilbooks.selflearnjava.impclasses;
 
 /**
- * Program to Test String
- *
+ * Demonstrates various operations and methods available for the
+ * {@link java.lang.String} class. This program tests:
+ * <ul>
+ * <li>String creation and comparison</li>
+ * <li>Key methods of the String class</li>
+ * <li>String concatenation and manipulation</li>
+ * </ul>
+ * 
  * @version 1.0
  * @since 16 Nov 2014
  * @author Sunil Sahu
@@ -18,6 +24,9 @@ public class TestString {
 		testConcatingString();
 	}
 
+	/**
+	 * Tests string concatenation and substring operations.
+	 */
 	public static void testConcatingString() {
 
 		String firstName = "Nayna";
@@ -32,6 +41,10 @@ public class TestString {
 
 	}
 
+	/**
+	 * Tests key methods of the String class including length, character retrieval,
+	 * index positions, replacement, case conversion, and substring extraction.
+	 */
 	public static void testKeyMethods() {
 
 		String n = "Vijay Dinanth Chouhan";
@@ -49,6 +62,9 @@ public class TestString {
 		System.out.println("Dad's name: " + n.substring(6));
 	}
 
+	/**
+	 * Tests different ways of creating and comparing strings.
+	 */
 	public static void testCreateStrings() {
 
 		// Literals

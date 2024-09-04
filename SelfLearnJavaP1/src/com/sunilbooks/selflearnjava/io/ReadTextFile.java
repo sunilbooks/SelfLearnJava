@@ -3,7 +3,15 @@ package com.sunilbooks.selflearnjava.io;
 import java.io.FileReader;
 
 /**
- * Reads a Text File charter by charter and by char array
+ * Reads a text file character by character and by character array.
+ * <p>
+ * This class demonstrates two methods of reading characters from a text file:
+ * <ul>
+ * <li>Character by character using {@code FileReader}.</li>
+ * <li>Character array using {@code FileReader}.</li>
+ * </ul>
+ * The file path used for reading is "c:/test.txt".
+ * </p>
  * 
  * @version 1.0
  * @since 16 Nov 2014
@@ -11,15 +19,30 @@ import java.io.FileReader;
  * @Copyright (c) Sunil Sahu
  * @url www.sunilbooks.com
  */
-
 public class ReadTextFile {
 
+	/**
+	 * The entry point of the application. It calls methods to read a file by
+	 * character and by character array.
+	 * 
+	 * @param args command-line arguments (not used)
+	 * @throws Exception if an I/O error occurs or file cannot be read
+	 */
 	public static void main(String[] args) throws Exception {
 		readByChar();
 		System.out.println();
 		readByArray();
 	}
 
+	/**
+	 * Reads and displays the contents of a file character by character.
+	 * <p>
+	 * This method uses a {@code FileReader} to read one character at a time from
+	 * the file "c:/test.txt" and prints each character to the console.
+	 * </p>
+	 * 
+	 * @throws Exception if an I/O error occurs or the file cannot be read
+	 */
 	private static void readByChar() throws Exception {
 
 		System.out.println("Read file char by char");
@@ -33,13 +56,24 @@ public class ReadTextFile {
 
 		// ch is -1 if no more character in file
 		while (ch != -1) {
-			chr = (char) ch; // cast to chr
+			chr = (char) ch; // cast to char
 			System.out.print(chr);
 			ch = r.read();
 		}
 		r.close();
 	}
 
+	/**
+	 * Reads and displays the contents of a file using a character array.
+	 * <p>
+	 * This method uses a {@code FileReader} to read characters into a buffer
+	 * (character array) and then creates a {@code String} from the buffer. It
+	 * prints the contents of the file to the console in chunks defined by the
+	 * buffer size.
+	 * </p>
+	 * 
+	 * @throws Exception if an I/O error occurs or the file cannot be read
+	 */
 	private static void readByArray() throws Exception {
 
 		System.out.println("Read file by char Array");
