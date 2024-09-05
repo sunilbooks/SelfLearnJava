@@ -1,17 +1,23 @@
 package com.sunilbooks.selflearnjava.swing;
 
 import java.awt.GridLayout;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+
 /**
- * 
+ * A Swing application that demonstrates the use of GridLayout.
+ * <p>
+ * This class creates a JFrame with a GridLayout, arranging components in a grid
+ * of 3 rows and 2 columns. Each JButton component is placed into one of the
+ * grid cells. The layout ensures that all components are evenly spaced within
+ * the grid.
+ * </p>
  * 
  * @version 1.0
  * @since 16 Nov 2014
  * @author Sunil Sahu
- * @Copyright (c) Sunil Sahu
+ * @copyright (c) Sunil Sahu
  * @url www.sunilbooks.com
  */
 public class MyWindowGL {

@@ -3,47 +3,58 @@ package com.sunilbooks.selflearnjava.swing;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JSlider;
+
 /**
- * Slider in Swing
+ * A Swing application that demonstrates the use of the JSlider component.
+ * <p>
+ * This class creates a JFrame window containing a JSlider with custom
+ * configurations. The slider includes minor and major tick marks, label
+ * painting, and snap-to-tick functionality.
+ * </p>
  * 
  * @version 1.0
  * @since 16 Nov 2014
  * @author Sunil Sahu
- * @Copyright (c) Sunil Sahu
+ * @copyright (c) Sunil Sahu
  * @url www.sunilbooks.com
  */
 public class SwingSlider {
 
-public static void main(String[] args) {
-        
-        JFrame frame = new JFrame("Swing Slider");
-        JPanel panel = (JPanel)frame.getContentPane();
+	/**
+	 * The entry point of the application. Creates and displays a JFrame containing
+	 * a JSlider.
+	 * 
+	 * @param args command line arguments
+	 */
+	public static void main(String[] args) {
 
-                   // Create a slider
-        JSlider slider = new JSlider();
+		JFrame frame = new JFrame("Swing Slider");
+		JPanel panel = (JPanel) frame.getContentPane();
 
-                    // set minor tick spacing
-        slider.setMinorTickSpacing(5);
+		// Create a slider
+		JSlider slider = new JSlider();
 
-                   // set major tick spacing
-        slider.setMajorTickSpacing(10);
-                    
-                   // set tick visible
-        slider.setPaintTicks(true);
+		// Set minor tick spacing
+		slider.setMinorTickSpacing(5);
 
-                   // set the knob to the closest tick mark next to where the user positioned the knob. 
-        slider.setSnapToTicks(true);
-        
-            // paint track of slider track      
-        slider.setPaintTrack(false);
-                
-                  // paint track of label
-        slider.setPaintLabels(true);
+		// Set major tick spacing
+		slider.setMajorTickSpacing(10);
 
-        panel.add(slider);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setVisible(true);
-        frame.pack();
-        
-    }
+		// Set tick marks visible
+		slider.setPaintTicks(true);
+
+		// Set the knob to snap to the closest tick mark
+		slider.setSnapToTicks(true);
+
+		// Paint the track of the slider
+		slider.setPaintTrack(false);
+
+		// Paint the labels of the slider
+		slider.setPaintLabels(true);
+
+		panel.add(slider);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setVisible(true);
+		frame.pack();
+	}
 }

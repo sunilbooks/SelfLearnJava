@@ -6,16 +6,21 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;
+
 /**
- * Program to create frame with menu bar
+ * A Swing application that creates a window with a menu bar and a button.
+ * <p>
+ * This class demonstrates how to create a JFrame with a JMenuBar containing
+ * "File" and "Edit" menus, each with its respective menu items. It also
+ * includes a JButton on the frame.
+ * </p>
  * 
  * @version 1.0
  * @since 16 Nov 2014
  * @author Sunil Sahu
- * @Copyright (c) Sunil Sahu
+ * @copyright (c) Sunil Sahu
  * @url www.sunilbooks.com
  */
-
 public class FrameWithMenuBar {
 
 	public static void main(String[] args) {
@@ -45,7 +50,7 @@ public class FrameWithMenuBar {
 		fileMenu.add(newFile);
 		fileMenu.add(open);
 
-		// Build a Edit Menu and its Menu Items
+		// Build an Edit Menu and its Menu Items
 		JMenu editMenu = new JMenu("Edit");
 		JMenuItem cut = new JMenuItem("Cut");
 		JMenuItem copy = new JMenuItem("Copy");
@@ -72,7 +77,7 @@ public class FrameWithMenuBar {
 		frame.setSize(200, 100);
 
 		// Make window visible
-		frame.setVisible(true); 
+		frame.setVisible(true);
 
 	}
 }

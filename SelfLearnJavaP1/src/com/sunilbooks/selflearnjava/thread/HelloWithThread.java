@@ -1,58 +1,65 @@
 package com.sunilbooks.selflearnjava.thread;
 
 /**
- * An example thread class
+ * This class demonstrates the use of threads by extending the {@link Thread}
+ * class. It shows how to create and run multiple threads concurrently, each
+ * executing its own task.
  * 
- * @version 1.0
+ * <p>
+ * In this example, two threads are created by extending the {@code Thread}
+ * class and starting them. Each thread prints a sequence of numbers along with
+ * its name, demonstrating concurrent execution.
+ * </p>
+ * 
+ * @version 1.1
  * @since 16 Nov 2014
  * @author Sunil Sahu
  * @Copyright (c) Sunil Sahu
  * @url www.sunilbooks.com
  */
-
 public class HelloWithThread extends Thread {
 
 	/**
-	 * Name of thread
+	 * The name associated with this thread, used for displaying messages.
 	 */
 	private String name = null;
 
 	/**
-	 * Parameterized constructor
+	 * Constructs a new {@code HelloWithThread} object with the specified name.
 	 * 
-	 * @param name
+	 * @param name the name to be associated with this thread
 	 */
 	public HelloWithThread(String name) {
 		this.name = name;
 	}
 
 	/**
-	 * Execute thread operation
+	 * Executes the thread's operation by printing a message 500 times with the
+	 * thread's name. This method is called when the thread is started.
 	 */
 	public void run() {
 		for (int i = 0; i < 500; i++) {
 			System.out.println(i + "#" + name);
 		}
-
 	}
 
 	/**
-	 * Test the example
+	 * The main method creates two instances of {@code HelloWithThread} and starts
+	 * them as separate threads. It also prints a message 500 times from the main
+	 * thread to demonstrate concurrent execution.
 	 * 
-	 * @param args
+	 * @param args command-line arguments (not used)
 	 */
 	public static void main(String[] args) {
-
+		// Create and start two threads with different names
 		HelloWithThread t1 = new HelloWithThread("Ram");
 		HelloWithThread t2 = new HelloWithThread("Shyam");
-
 		t1.start();
 		t2.start();
 
+		// Print messages from the main thread
 		for (int i = 0; i < 500; i++) {
-			System.out.println(i + " I m Main");
+			System.out.println(i + " I am Main");
 		}
-
 	}
-
 }

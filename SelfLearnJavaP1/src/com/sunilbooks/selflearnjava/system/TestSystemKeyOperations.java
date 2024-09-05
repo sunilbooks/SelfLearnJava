@@ -1,12 +1,19 @@
 package com.sunilbooks.selflearnjava.system;
 
-
 /**
- * Performs key operations to run Garbage Collector, load external libraries,
- * map the library name to OS specific String, run the finalize method for any
- * object waiting for finalization and to terminate the JVM.
+ * This class demonstrates key operations of the {@code System} class, such as
+ * running the garbage collector, mapping library names to OS-specific strings,
+ * running finalization for objects waiting for finalization, and terminating
+ * the Java Virtual Machine (JVM).
  * 
- * @version 1.0
+ * <p>
+ * The {@code System.gc()} method is used to request garbage collection,
+ * {@code System.mapLibraryName()} to map a library name,
+ * {@code System.runFinalization()} to run finalizers for objects awaiting
+ * finalization, and {@code System.exit()} to terminate the JVM.
+ * </p>
+ * 
+ * @version 1.1
  * @since 16 Nov 2014
  * @author Sunil Sahu
  * @Copyright (c) Sunil Sahu
@@ -14,25 +21,29 @@ package com.sunilbooks.selflearnjava.system;
  */
 public class TestSystemKeyOperations {
 
+	/**
+	 * The main method that demonstrates system key operations such as garbage
+	 * collection, library name mapping, running finalization, and JVM termination.
+	 * 
+	 * @param args command-line arguments (not used)
+	 */
 	public static void main(String[] args) {
 
-		// run the garbage collector
+		// Run the garbage collector
 		System.gc();
 		System.out.println("Garbage collector executed.");
 
-		// map library name
+		// Map library name to OS-specific string
 		String libName = System.mapLibraryName("os.name");
 		System.out.println("os.name library=" + libName);
 
-		// run finalization
+		// Run finalization for objects waiting for finalization
 		System.runFinalization();
 
-		// terminates the currently running JVM
+		// Terminate the currently running JVM
 		System.exit(1);
 
-		// this line will never print because JVM is terminated
+		// This line will never print because JVM is terminated
 		System.out.println("JVM is terminated");
-
 	}
-
 }
