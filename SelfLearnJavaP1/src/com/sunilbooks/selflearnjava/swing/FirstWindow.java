@@ -3,16 +3,20 @@ package com.sunilbooks.selflearnjava.swing;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+
 /**
- * Progran to create a frame
+ * A simple Swing application that creates a window with a single button.
+ * <p>
+ * This class demonstrates how to create a basic JFrame, add a JButton to it,
+ * and make it visible.
+ * </p>
  * 
  * @version 1.0
  * @since 16 Nov 2014
  * @author Sunil Sahu
- * @Copyright (c) Sunil Sahu
+ * @copyright (c) Sunil Sahu
  * @url www.sunilbooks.com
  */
-
 public class FirstWindow {
 
 	public static void main(String[] args) {
@@ -28,7 +32,7 @@ public class FirstWindow {
 		pane.add(b);
 
 		// Remove window from memory when window is closed
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		// Size window as per contained components
 		// frame.pack();

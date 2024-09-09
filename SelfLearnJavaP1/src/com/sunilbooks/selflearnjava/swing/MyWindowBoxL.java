@@ -7,13 +7,21 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+
 /**
- * Program to create Box Layout
+ * A Swing application that demonstrates the use of BoxLayout.
+ * <p>
+ * This class creates a JFrame with a BoxLayout. It provides an option to
+ * arrange components in either a horizontal row (X_AXIS) or a vertical column
+ * (Y_AXIS). The JFrame contains various components including buttons, a text
+ * field, a checkbox, and a label, all arranged according to the selected
+ * BoxLayout orientation.
+ * </p>
  * 
  * @version 1.0
  * @since 16 Nov 2014
  * @author Sunil Sahu
- * @Copyright (c) Sunil Sahu
+ * @copyright (c) Sunil Sahu
  * @url www.sunilbooks.com
  */
 public class MyWindowBoxL {

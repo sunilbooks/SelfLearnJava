@@ -1,9 +1,16 @@
 package com.sunilbooks.selflearnjava.system;
 
 /**
- * A Class read a line from Keyboard and print at Console.
+ * A class that reads a line of text from the keyboard and prints it to the
+ * console. It captures input character by character until the Enter key
+ * (represented by the Unicode value 13) is pressed.
  * 
- * @version 1.0
+ * <p>
+ * This program demonstrates basic usage of reading input from the console using
+ * {@code System.in.read()}.
+ * </p>
+ * 
+ * @version 2.0
  * @since 16 Nov 2014
  * @author Sunil Sahu
  * @Copyright (c) Sunil Sahu
@@ -11,6 +18,14 @@ package com.sunilbooks.selflearnjava.system;
  */
 public class ReadFromKeyboard {
 
+	/**
+	 * The main method that reads input from the user and prints it back to the
+	 * console.
+	 *
+	 * @param args command-line arguments (not used)
+	 * @throws Exception if an input/output error occurs while reading from the
+	 *                   keyboard
+	 */
 	public static void main(String[] args) throws Exception {
 
 		int ch = 0;
@@ -28,11 +43,8 @@ public class ReadFromKeyboard {
 
 			sb.append(chr);
 
-		} while (ch != 13); // 13 is the end line character represents Enter
-							// Key, If Enter Key is pressed then terminate the
-							// loop
+		} while (ch != 13); // 13 is the end line character representing Enter key
 
 		System.out.println("You have entered : " + sb.toString());
-
 	}
 }

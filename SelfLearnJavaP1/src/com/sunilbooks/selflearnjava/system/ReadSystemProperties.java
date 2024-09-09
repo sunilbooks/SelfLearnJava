@@ -4,9 +4,19 @@ import java.util.Properties;
 import java.util.Set;
 
 /**
- * This class uses System class to read System properties and print.
+ * This class demonstrates how to use the {@code System} class to read, clear,
+ * and set system properties. It retrieves all system-defined properties and
+ * prints them, along with examples of manipulating specific properties like
+ * "user.country".
  * 
- * @version 1.0
+ * <p>
+ * The {@code System.getProperties()} method is used to obtain the system
+ * properties, and {@code System.getProperty()}, {@code System.setProperty()},
+ * and {@code System.clearProperty()} demonstrate how to work with individual
+ * properties.
+ * </p>
+ * 
+ * @version 1.1
  * @since 16 Nov 2014
  * @author Sunil Sahu
  * @Copyright (c) Sunil Sahu
@@ -14,6 +24,11 @@ import java.util.Set;
  */
 public class ReadSystemProperties {
 
+	/**
+	 * The main method that reads, clears, and sets system properties.
+	 * 
+	 * @param args command-line arguments (not used)
+	 */
 	public static void main(String[] args) {
 
 		// Get All System Defined Properties
@@ -32,8 +47,7 @@ public class ReadSystemProperties {
 
 		// Clear property example
 		System.clearProperty("user.country");
-
-		System.out.println(System.getProperty("user.country")); // print null
+		System.out.println(System.getProperty("user.country")); // prints null
 
 		// Set System property
 		System.setProperty("user.country", "IN");

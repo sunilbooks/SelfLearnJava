@@ -1,20 +1,23 @@
 package com.sunilbooks.selflearnjava.swing;
 
 import java.awt.CardLayout;
-import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
+
 /**
- * Program to create Card Layout
+ * A Swing application that demonstrates the use of CardLayout.
+ * <p>
+ * This class creates a JFrame with a CardLayout. It includes two buttons that
+ * allow the user to navigate between different panels in the card layout.
+ * </p>
  * 
  * @version 1.0
  * @since 16 Nov 2014
  * @author Sunil Sahu
- * @Copyright (c) Sunil Sahu
+ * @copyright (c) Sunil Sahu
  * @url www.sunilbooks.com
  */
 public class MyWindowCardLayout {
@@ -46,7 +49,11 @@ public class MyWindowCardLayout {
 }
 
 /**
- * Button event listener
+ * Event listener for navigating between panels in a CardLayout.
+ * <p>
+ * This class handles button click events to switch to the next panel in the
+ * CardLayout.
+ * </p>
  */
 class ButtonHandler implements ActionListener {
 	JPanel pane = null;

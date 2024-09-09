@@ -5,13 +5,20 @@ import java.awt.GridBagLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+
 /**
- * Program to create GridBagLayout
+ * A Swing application that demonstrates the use of GridBagLayout.
+ * <p>
+ * This class creates a JFrame with a GridBagLayout. It arranges several JButton
+ * components in a grid where each button is placed according to specified
+ * constraints. The layout allows for complex arrangements of components with
+ * varying sizes and positions.
+ * </p>
  * 
  * @version 1.0
  * @since 16 Nov 2014
  * @author Sunil Sahu
- * @Copyright (c) Sunil Sahu
+ * @copyright (c) Sunil Sahu
  * @url www.sunilbooks.com
  */
 public class MyWindowGBL {
@@ -56,8 +63,7 @@ public class MyWindowGBL {
 		c.gridy = 3;
 
 		JButton b5 = new JButton("Button5");
-		pane.add(b5,c);
-		
+		pane.add(b5, c);
 
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
